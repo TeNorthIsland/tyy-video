@@ -1,0 +1,40 @@
+.videoListWrap {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .videoListContent {
+    margin-top: 0.1rem;
+    .videoItem {
+      margin-top: 0.15rem;
+      .videoTitle {
+        font-size: 0.18rem;
+        font-weight: bold;
+        color: #FFF;
+        margin-bottom: 0.1rem;
+      }
+      .thumbnailContent {
+        width: 3.87rem;
+        height: 2.33rem;
+      }
+    }
+  }
+
+  .paginationContent {
+    .pagination {
+      border: 1px solid #165DFF;
+      .nextIncon {
+        color: #165DFF;
+      }
+      li {
+        margin: unset ;
+        border: unset ;
+        padding: 0 0.12rem;
+      }
+      & > .rc-pagination-item-active {
+        background-color: red;
+      }
+    } 
+  }
+}
