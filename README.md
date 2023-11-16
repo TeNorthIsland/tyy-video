@@ -43,4 +43,6 @@ import 'xgplayer/dist/index.min.css' // 引入css 这个是必要的
 
 1. 要把原来不合理的布局 给删除掉，（deital, categoryHisory....）
 
-2. 移除依赖 rmc-dialog
+2. 移除依赖 rmc-dialog(这个组件有问题无法自定modal 挂挂载点) 、
+
+3. Next 存在一些缓存问题，这一点我们 需要再仔细研究一下，然后就是他的Style 样式会有冲突 ，如果有CSS-in-js 会存在一些覆盖等...问题。目前暂时使用import去覆盖，具体解决方案 需要再仔细瞧瞧

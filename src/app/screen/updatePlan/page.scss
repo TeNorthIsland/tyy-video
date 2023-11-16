@@ -1,9 +1,10 @@
 
-.vip-info-collapse {
+.vip-info-collapse-screen {
   width: 3.87rem;
   border: unset;
   margin-top: 0.48rem;
-  background-color: unset;
+  background-color: unset !important;
+  border: unset !important;
   .rc-collapse-content {
     // background-color: unset;
   }
@@ -13,7 +14,7 @@
   }
 }
 
-.vip-header {
+.vip-header-screen {
   padding: unset !important;
   // background-color: #fa1979;
   .rc-collapse-header-text {

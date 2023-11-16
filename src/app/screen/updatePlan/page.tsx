@@ -90,11 +90,11 @@ const Page = () => {
 
   return (
     <>
-      <Collapse className="vip-info-collapse" accordion={false} openMotion={motion}>
+      <Collapse className="vip-info-collapse-screen" accordion={false} openMotion={motion}>
         {VIPList.map((item, idx) => {
           return (
             <Panel
-              headerClass="vip-header"
+              headerClass="vip-header-screen"
               style={{ backgroundColor: item.styles.bkgColor }}
               showArrow={false}
               header={
