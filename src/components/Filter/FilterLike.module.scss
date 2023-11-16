@@ -1,0 +1,27 @@
+.categoryContent {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 0.1rem;
+
+  .lable {
+    font-size: 0.18rem;
+    font-weight: bold;
+    color: #ffff;
+  }
+
+  .itemContent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    p {
+      font-size: 0.18rem;
+      font-weight: bold;
+      color: #ffff;
+      margin-left: 0.25rem;
+    }
+  }
+
+}

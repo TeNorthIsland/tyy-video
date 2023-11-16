@@ -1,0 +1,85 @@
+.vipContent {
+  width: 3.87rem;
+  font-size: 0.18rem;
+  .currentVipLevel {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.25rem;
+    p {
+      font-size: 0.18rem;
+      font-weight: bold;
+      color: #ffff;
+    }
+  }
+  .updateVip {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.10rem;
+    p {
+      font-size: 0.16rem;
+      color: #ffff;
+      padding: 0.05rem 0.12rem;
+      background-color: #fa3719;
+    }
+  }
+  
+  .tabWrap {
+    margin-top: 0.18rem;
+    .tabTitle {
+      display: flex;
+      justify-content: space-between;
+      span {
+        padding: 0.05rem 0.12rem;
+        background-color: #1989FA;
+        font-size: 0.18rem;
+        color: #fff;
+      }
+      span.active {
+        background-color: #8DB4F0;
+      }
+    }
+
+    .tabPanner {
+      .pannerWrap {
+        background-color: #C4C4C4;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // height: 2.56rem;
+        .line {
+          margin-top: 0.02rem;
+          height: 0.48rem;
+          background-color: #8091A5;
+          color: #fff;
+          font-size: 0.18rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 0.06rem;
+          .lable {
+            
+          }
+          .loginBtn {
+            padding: 0.05rem 0.12rem;
+            background-color: #FF4D4F;
+            border-radius: 0.03rem;
+          }
+          .bindAcountBtn {
+            padding: 0.05rem 0.12rem;
+            background-color: #FF4D4F;
+            border-radius: 0.03rem;
+          }
+
+          &:nth-child(4) {
+            justify-content: center;
+          }
+          &:nth-child(5) {
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+
+}

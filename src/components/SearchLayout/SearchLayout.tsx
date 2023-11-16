@@ -4,6 +4,7 @@ import React, { FC } from 'react'
 import styles from './component.module.scss'
 import Link from 'next/link'
 import Input from 'rc-input'
+import { usePathname, useRouter } from 'next/navigation'
 
 interface InterTobMenu {
   name: string
@@ -19,32 +20,45 @@ const Button = () => {
   )
 }
 
-const footerMenu: InterTobMenu[] = [
+const notShowSearchh = [
   {
-    name: '会员方案',
-    url: '/tab/category',
-  },
-  {
-    name: '用户条款',
-    url: '/tab/like',
-  },
-  {
-    name: '政策条款',
-    url: '/tab/vip',
-  },
-  {
-    name: '联系我们',
-    url: '/tab/gameDownload',
+    url: '/screen/updatePlan',
   },
 ]
 
 const SearchLayout: FC<any> = ({ children }) => {
+  const pathname = usePathname()
+  const showSearch = !notShowSearchh.some((path) => pathname === path.url)
+  const router = useRouter()
+
+  const footerMenu: InterTobMenu[] = [
+    {
+      name: '会员方案',
+      url: '/screen/updatePlan',
+    },
+    {
+      name: '用户条款',
+      url: '/screen/agreement',
+    },
+    {
+      name: '政策条款',
+      url: '/screen/policy',
+    },
+    {
+      name: '联系我们',
+      url: '/tab/chat',
+    },
+  ]
+
   return (
     <div className={styles.pageContainer}>
       {/* serach header */}
-      <div className={styles.serachContent}>
-        <Input className={styles.serachInput} placeholder="搜索你想看的内容" suffix={<Button />} />
-      </div>
+      {showSearch && (
+        <div className={styles.serachContent}>
+          <Input className={styles.serachInput} placeholder="搜索你想看的内容" suffix={<Button />} />
+        </div>
+      )}
+
       {/* content */}
       <div className={styles.videoListWrap}>{children}</div>
       {/* footer */}
@@ -53,7 +67,7 @@ const SearchLayout: FC<any> = ({ children }) => {
           {footerMenu.map((item, index) => {
             return (
               <li key={index}>
-                <Link href={item.url}>{item.name}</Link>
+                <Link href={`${item.url}?pageName=${encodeURIComponent(item.name)}`}>{item.name}</Link>
               </li>
             )
           })}

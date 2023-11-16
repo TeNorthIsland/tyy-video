@@ -1,5 +1,8 @@
 .pageContainer {
   padding: 0 0.3rem;
+  display: flex;
+  flex-direction: column;
+
   .serachContent {
     display: flex;
     justify-content: center;
@@ -36,6 +39,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1;
+    min-height: 65vh;
   }
 
   .footer {
@@ -43,7 +48,7 @@
     display: flex;
     justify-content: center;
     .naviUl {
-      width: 80%;
+      width: 100%;
       list-style: none;
       display: flex;
       justify-content: space-around;
