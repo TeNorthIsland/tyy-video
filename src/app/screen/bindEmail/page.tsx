@@ -18,7 +18,6 @@ const Page: FC<any> = () => {
     formState: { errors },
   } = useForm<Inputs>()
 
-  const router = useRouter()
 
   const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data)
 

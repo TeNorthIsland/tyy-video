@@ -4,6 +4,7 @@ import React, { FC } from 'react'
 import styles from './page.module.scss'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 
 type Inputs = {
   name: string
@@ -53,14 +54,12 @@ const Page: FC<any> = () => {
         </div>
         <div className={styles.btn}>
           <input className={styles.submit} type="submit" value="登录" />
-          <div
+          <Link
+            href={`/screen/findPwd?pageName=${encodeURIComponent('忘记密码')}`}
             className={styles.extent}
-            onClick={() => {
-              router.push(`/screen/findPwd?pageName=${encodeURIComponent('忘记密码')}`)
-            }}
           >
             <span>忘记密码</span>
-          </div>
+          </Link>
         </div>
       </form>
     </>

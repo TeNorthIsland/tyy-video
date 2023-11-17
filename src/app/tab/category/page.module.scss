@@ -19,7 +19,7 @@
   width: 100%;
   display: flex;
   // padding: 0.1rem 0;
-  span {
+  a {
     padding: 0 0.12rem;
     font-size: 0.18rem;
     color: #000000;
@@ -27,7 +27,7 @@
     margin-left: 0.14rem;
   }
 
-  span:first-child {
+  a:first-child {
     margin-left: 0;
   }
 }

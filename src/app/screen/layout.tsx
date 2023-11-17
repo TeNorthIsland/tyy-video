@@ -9,8 +9,6 @@ export default function ScreenLayout({
 }: {
   children: React.ReactNode
 }) {
-  const pathname = usePathname()
-  const router = useRouter()
   const searchParams = useSearchParams()
 
   return (
@@ -20,7 +18,8 @@ export default function ScreenLayout({
         <div
           className={layout.back}
           onClick={() => {
-            router.back()
+            // router.back()
+            window.history.back()
           }}
         >
           <Image src="/icon/left.png" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} alt="Picture of the author" />

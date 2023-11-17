@@ -2,6 +2,7 @@
 
 import { usePathname, useRouter } from 'next/navigation'
 import layout from './layout.module.scss'
+import Link from 'next/link'
 
 interface InterTobMenu {
   name: string
@@ -79,9 +80,9 @@ export default function TabLayout({
         <ul className={layout.naviUl}>
           {topMenu.map((item, index) => {
             return (
-              <li key={index} className={liStyle(item.url)} onClick={navigate(item.url)}>
+              <li key={index} className={liStyle(item.url)} >
                 <div>
-                  <p>{item.name}</p>
+                  <Link href={item.url}>{item.name}</Link>
                 </div>
               </li>
             )
@@ -95,9 +96,9 @@ export default function TabLayout({
         <ul className={layout.naviUl}>
           {bottomMenu.map((item, index) => {
             return (
-              <li key={index} className={liStyle(item.url)} onClick={navigate(item.url)}>
+              <li key={index} className={liStyle(item.url)} >
                 <div>
-                  <p>{item.name}</p>
+                  <Link href={item.url}>{item.name}</Link>
                 </div>
               </li>
             )

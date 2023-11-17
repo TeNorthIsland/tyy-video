@@ -11,6 +11,7 @@ import motion from '@/utils/mations/collapseMotion'
 import styles from './page.module.scss'
 import './page.scss'
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 
 interface InterCategoryItem {
   name: string
@@ -135,16 +136,13 @@ const Page: FC<any> = () => {
               <div className={styles.content}>
                 {item.subCategor?.map((subItem, subIdx) => {
                   return (
-                    <span
-                      onClick={() => {
-                        // console.log(subItem.c_id)
-                        // router.push('/tab/category/details')
-                        router.push(`/screen/categoryDetail?pageName=${encodeURIComponent('分类详情')}`)
-                      }}
+
+                    <Link
+                      href={`/screen/categoryDetail?pageName=${encodeURIComponent('分类详情')}`}
                       key={subItem.c_id}
                     >
                       {subItem.name}
-                    </span>
+                    </Link>
                   )
                 })}
               </div>

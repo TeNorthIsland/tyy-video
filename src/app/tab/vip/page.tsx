@@ -5,6 +5,7 @@ import Table from 'rc-table'
 import './page.scss'
 import 'rc-table/assets/index.css'
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 
 const PersonInfo = () => {
   const router = useRouter()
@@ -19,28 +20,24 @@ const PersonInfo = () => {
         <div>
           <span>UPP22(临时账号)</span>
         </div>
-        <div
+        <Link
+          href={`/screen/login?pageName=${encodeURIComponent('登录')}`}
           className={styles.loginBtn}
-          onClick={() => {
-            router.push(`/screen/login?pageName=${encodeURIComponent('登录')}`)
-          }}
         >
           <span>登录</span>
-        </div>
+        </Link>
       </div>
       {/* 邮箱 */}
       <div className={styles.line}>
         <div className={styles.lable}>
           <span>邮箱</span>
         </div>
-        <div
+        <Link
+          href={`/screen/bindEmail?pageName=${encodeURIComponent('绑定邮箱')}`}
           className={styles.bindAcountBtn}
-          onClick={() => {
-            router.push(`/screen/bindEmail?pageName=${encodeURIComponent('绑定邮箱')}`)
-          }}
         >
           <span>绑定邮箱账号</span>
-        </div>
+        </Link>
       </div>
       <div className={styles.line}>
         <div className={styles.lable}>
@@ -137,14 +134,12 @@ const Page: FC<any> = () => {
       <div className={styles.currentVipLevel}>
         <p>一般会员</p>
       </div>
-      <div
+      <Link
+        href={`/screen/updatePlan?pageName=${encodeURIComponent('会员升级')}`}
         className={styles.updateVip}
-        onClick={() => {
-          router.push(`/screen/updatePlan?pageName=${encodeURIComponent('会员升级')}`)
-        }}
       >
         <p>升级VIP</p>
-      </div>
+      </Link>
       {/* tabs */}
       <div className={styles.tabWrap}>
         {/* title */}
@@ -157,13 +152,11 @@ const Page: FC<any> = () => {
           >
             个人信息
           </span>
-          <span
-            onClick={() => {
-              router.push(`/screen/viewHisory?pageName=${encodeURIComponent('观看纪录')}`)
-            }}
+          <Link
+            href={`/screen/viewHisory?pageName=${encodeURIComponent('观看纪录')}`}
           >
             观看纪录
-          </span>
+          </Link>
           <span
             onClick={() => {
               setActive(2)

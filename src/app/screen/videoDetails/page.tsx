@@ -18,6 +18,8 @@ import { useRouter } from 'next/navigation'
 
 const { Panel } = Collapse
 
+import Link from 'next/link'
+
 interface InterVipItem {
   name: string
   isSelect: boolean
@@ -83,14 +85,12 @@ const Page: FC<any> = () => {
         <div id="mse"></div>
       </div>
       {/* shard */}
-      <div
+      <Link
+        href={`/screen/shard?pageName=${encodeURIComponent('分享')}`}
         className={styles.shardButton}
-        onClick={() => {
-          router.push(`/screen/shard?pageName=${encodeURIComponent('分享')}`)
-        }}
       >
         <span>分享获得免费观看</span>
-      </div>
+      </Link>
       {/* video source */}
       <div className={styles.sourceType}>
         <div className={styles.lable}>画质</div>

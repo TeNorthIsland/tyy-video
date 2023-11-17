@@ -7,6 +7,8 @@ import FillterTiktok from '../Filter/FilterTiktok'
 import { FC } from 'react'
 import { useRouter } from 'next/navigation'
 
+import Link from 'next/link'
+
 interface InterVideoListPorps {
   needPagination?: boolean
 }
@@ -19,11 +21,9 @@ const VideoList: FC<InterVideoListPorps> = (porps) => {
     <>
       <div className={styles.videoListWrap}>
         <div className={styles.videoListContent}>
-          <div
+          <Link
+            href={`/screen/videoDetails?pageName=${encodeURIComponent('详情')}`}
             className={styles.videoItem}
-            onClick={() => {
-              router.push(`/screen/videoDetails?pageName=${encodeURIComponent('详情')}`)
-            }}
           >
             <div className={styles.videoTitle}>
               <span>蛋仔派对：蛋仔岛大更新？我变成了椅子</span>
@@ -34,13 +34,11 @@ const VideoList: FC<InterVideoListPorps> = (porps) => {
                 <span>04: 12</span>
               </div> */}
             </div>
-          </div>
+          </Link>
 
-          <div
+          <Link
             className={styles.videoItem}
-            onClick={() => {
-              router.push(`/screen/videoDetails?pageName=${encodeURIComponent('详情')}`)
-            }}
+            href={`/screen/videoDetails?pageName=${encodeURIComponent('详情')}`}
           >
             <div className={styles.videoTitle}>
               <span>拆除43：卧龙附近，必有凤雏</span>
@@ -51,7 +49,7 @@ const VideoList: FC<InterVideoListPorps> = (porps) => {
                 <span>04: 12</span>
               </div> */}
             </div>
-          </div>
+          </Link>
         </div>
 
         {/* 分页器 */}
