@@ -4,10 +4,26 @@
 <head>
   <meta charSet="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="/_next/static/css/7caca498ec6fcb1e.css" crossorigin="" data-precedence="next" />
-  <link rel="stylesheet" href="/_next/static/css/373e35d3121261af.css" crossorigin="" data-precedence="next" />
-  <link rel="stylesheet" href="/_next/static/css/38d58b3ee22f9364.css" crossorigin="" data-precedence="next" />
-  <link rel="stylesheet" href="/_next/static/css/234d8072ef3a97b9.css" crossorigin="" data-precedence="next" />
+  <link rel="stylesheet" href="/public/styles/7caca498ec6fcb1e.css" crossorigin="" data-precedence="next" />
+  <link rel="stylesheet" href="/public/styles/373e35d3121261af.css" crossorigin="" data-precedence="next" />
+  <link rel="stylesheet" href="/public/styles/38d58b3ee22f9364.css" crossorigin="" data-precedence="next" />
+  <link rel="stylesheet" href="/public/styles/234d8072ef3a97b9.css" crossorigin="" data-precedence="next" />
+  <!-- zepto.js -->
+  <script src="/public/js/lib/zepto.js"></script>
+  <script src="/public/js/lib/zepto.delect.js"></script>
+  <script src="/public/js/lib/zepto.fx.js"></script>
+  <script src="/public/js/lib/zepto.fx_methods.js"></script>
+  <script src="/public/js/lib/zepto.data.js"></script>
+  <script src="/public/js/lib/zepto.callback.js"></script>
+
+  <!-- swiper -->
+  <!-- <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  /> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- mete-data -->
   <title>TYY-Video</title>
   <meta name="description" content="全网海量资源免费看,就来TYY-Video" />
   <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16" />
@@ -42,25 +58,49 @@
               <div class="component_searchBtnContext__JB0oR"><span>搜索</span></div>
             </span></span></div>
         <div class="component_videoListWrap__UlLxj">
-          <div class="swiper component_swiperContent__kvcF7">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img alt="Picture of the author" loading="lazy" width="0" height="0"
-                  decoding="async" data-nimg="1" style="color:transparent;width:100%;height:auto" sizes="100vw"
-                  srcSet="http://18.208.174.187:4000//imgs/banner/ad1.png?w=640&amp;q=75 640w, http://18.208.174.187:4000//imgs/banner/ad1.png?w=750&amp;q=75 750w, http://18.208.174.187:4000//imgs/banner/ad1.png?w=828&amp;q=75 828w, http://18.208.174.187:4000//imgs/banner/ad1.png?w=1080&amp;q=75 1080w, http://18.208.174.187:4000//imgs/banner/ad1.png?w=1200&amp;q=75 1200w, http://18.208.174.187:4000//imgs/banner/ad1.png?w=1920&amp;q=75 1920w, http://18.208.174.187:4000//imgs/banner/ad1.png?w=2048&amp;q=75 2048w, http://18.208.174.187:4000//imgs/banner/ad1.png?w=3840&amp;q=75 3840w"
-                  src="http://18.208.174.187:4000//imgs/banner/ad1.png?w=3840&amp;q=75" /></div>
-              <div class="swiper-slide"><img alt="Picture of the author" loading="lazy" width="0" height="0"
-                  decoding="async" data-nimg="1" style="color:transparent;width:100%;height:auto" sizes="100vw"
-                  srcSet="http://18.208.174.187:4000//imgs/banner/ad2.png?w=640&amp;q=75 640w, http://18.208.174.187:4000//imgs/banner/ad2.png?w=750&amp;q=75 750w, http://18.208.174.187:4000//imgs/banner/ad2.png?w=828&amp;q=75 828w, http://18.208.174.187:4000//imgs/banner/ad2.png?w=1080&amp;q=75 1080w, http://18.208.174.187:4000//imgs/banner/ad2.png?w=1200&amp;q=75 1200w, http://18.208.174.187:4000//imgs/banner/ad2.png?w=1920&amp;q=75 1920w, http://18.208.174.187:4000//imgs/banner/ad2.png?w=2048&amp;q=75 2048w, http://18.208.174.187:4000//imgs/banner/ad2.png?w=3840&amp;q=75 3840w"
-                  src="http://18.208.174.187:4000//imgs/banner/ad2.png?w=3840&amp;q=75" /></div>
-              <div class="swiper-slide"><img alt="Picture of the author" loading="lazy" width="0" height="0"
-                  decoding="async" data-nimg="1" style="color:transparent;width:100%;height:auto" sizes="100vw"
-                  srcSet="http://18.208.174.187:4000//imgs/banner/ad3.png?w=640&amp;q=75 640w, http://18.208.174.187:4000//imgs/banner/ad3.png?w=750&amp;q=75 750w, http://18.208.174.187:4000//imgs/banner/ad3.png?w=828&amp;q=75 828w, http://18.208.174.187:4000//imgs/banner/ad3.png?w=1080&amp;q=75 1080w, http://18.208.174.187:4000//imgs/banner/ad3.png?w=1200&amp;q=75 1200w, http://18.208.174.187:4000//imgs/banner/ad3.png?w=1920&amp;q=75 1920w, http://18.208.174.187:4000//imgs/banner/ad3.png?w=2048&amp;q=75 2048w, http://18.208.174.187:4000//imgs/banner/ad3.png?w=3840&amp;q=75 3840w"
-                  src="http://18.208.174.187:4000//imgs/banner/ad3.png?w=3840&amp;q=75" /></div>
+            <!-- <div class="swiper-wrapper">
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
             </div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-            <div class="swiper-pagination"></div>
-          </div>
+            <div class="swiper-pagination"></div> -->
+
+            <!-- Slider main container -->
+              <div class="swiper component_swiperContent__kvcF7">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img alt="Picture of the author" loading="lazy" width="0" height="0"
+                  decoding="async" data-nimg="1" style="color:transparent;width:100%;height:auto" sizes="100vw"
+                  srcSet="http://18.208.174.187:4000//imgs/banner/ad1.png?w=640&amp;q=75 640w, http://18.208.174.187:4000//imgs/banner/ad1.png?w=750&amp;q=75 750w, http://18.208.174.187:4000//imgs/banner/ad1.png?w=828&amp;q=75 828w, http://18.208.174.187:4000//imgs/banner/ad1.png?w=1080&amp;q=75 1080w, http://18.208.174.187:4000//imgs/banner/ad1.png?w=1200&amp;q=75 1200w, http://18.208.174.187:4000//imgs/banner/ad1.png?w=1920&amp;q=75 1920w, http://18.208.174.187:4000//imgs/banner/ad1.png?w=2048&amp;q=75 2048w, http://18.208.174.187:4000//imgs/banner/ad1.png?w=3840&amp;q=75 3840w"
+                  src="http://18.208.174.187:4000//imgs/banner/ad1.png?w=3840&amp;q=75" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img alt="Picture of the author" loading="lazy" width="0" height="0"
+                  decoding="async" data-nimg="1" style="color:transparent;width:100%;height:auto" sizes="100vw"
+                  srcSet="http://18.208.174.187:4000//imgs/banner/ad2.png?w=640&amp;q=75 640w, http://18.208.174.187:4000//imgs/banner/ad2.png?w=750&amp;q=75 750w, http://18.208.174.187:4000//imgs/banner/ad2.png?w=828&amp;q=75 828w, http://18.208.174.187:4000//imgs/banner/ad2.png?w=1080&amp;q=75 1080w, http://18.208.174.187:4000//imgs/banner/ad2.png?w=1200&amp;q=75 1200w, http://18.208.174.187:4000//imgs/banner/ad2.png?w=1920&amp;q=75 1920w, http://18.208.174.187:4000//imgs/banner/ad2.png?w=2048&amp;q=75 2048w, http://18.208.174.187:4000//imgs/banner/ad2.png?w=3840&amp;q=75 3840w"
+                  src="http://18.208.174.187:4000//imgs/banner/ad2.png?w=3840&amp;q=75" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img alt="Picture of the author" loading="lazy" width="0" height="0"
+                    decoding="async" data-nimg="1" style="color:transparent;width:100%;height:auto" sizes="100vw"
+                    srcSet="http://18.208.174.187:4000//imgs/banner/ad3.png?w=640&amp;q=75 640w, http://18.208.174.187:4000//imgs/banner/ad3.png?w=750&amp;q=75 750w, http://18.208.174.187:4000//imgs/banner/ad3.png?w=828&amp;q=75 828w, http://18.208.174.187:4000//imgs/banner/ad3.png?w=1080&amp;q=75 1080w, http://18.208.174.187:4000//imgs/banner/ad3.png?w=1200&amp;q=75 1200w, http://18.208.174.187:4000//imgs/banner/ad3.png?w=1920&amp;q=75 1920w, http://18.208.174.187:4000//imgs/banner/ad3.png?w=2048&amp;q=75 2048w, http://18.208.174.187:4000//imgs/banner/ad3.png?w=3840&amp;q=75 3840w"
+                    src="http://18.208.174.187:4000//imgs/banner/ad3.png?w=3840&amp;q=75" />
+                  </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
           <div class="component_videoListWrap__Ni9ST">
             <div class="component_videoListContent__iZmmA"><a class="component_videoItem__IKhF5"
                 href="/screen/videoDetails?pageName=%E8%AF%A6%E6%83%85">
@@ -130,4 +170,5 @@
   </div>
 </body>
 
+<script src="./public/js/page/index.js"></script>
 </html>

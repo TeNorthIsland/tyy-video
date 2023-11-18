@@ -1,0 +1,90 @@
+.layout_mainBody__tcIb4 {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.layout_mainNaviaContent__tRfvI {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+.layout_mainNaviaContent__tRfvI .layout_naviUl__sWycc {
+  padding: unset;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  background-color: #3e3e3e;
+  height: 0.52rem;
+}
+.layout_mainNaviaContent__tRfvI .layout_naviUl__sWycc li {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.layout_mainNaviaContent__tRfvI .layout_naviUl__sWycc li p {
+  font-size: 0.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+.layout_mainNaviaContent__tRfvI .layout_naviUl__sWycc li a {
+  text-decoration: none;
+  font-size: 0.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+.layout_mainNaviaContent__tRfvI .layout_naviUl__sWycc li div {
+  display: flex;
+}
+.layout_mainNaviaContent__tRfvI .layout_naviUl__sWycc .layout_active__lw0In {
+  height: 0.52rem;
+  background-color: #1989fa;
+}
+.layout_content__yuOY5 {
+  flex: 1 1;
+  background-color: #2b2929;
+  padding: 0.45rem 0;
+}
+.layout_mainNaviaContentFooter__c2HMt {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
+}
+.layout_mainNaviaContentFooter__c2HMt .layout_naviUl__sWycc {
+  padding: unset;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  background-color: #3e3e3e;
+  height: 0.52rem;
+}
+.layout_mainNaviaContentFooter__c2HMt .layout_naviUl__sWycc li {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.layout_mainNaviaContentFooter__c2HMt .layout_naviUl__sWycc li p {
+  font-size: 0.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+.layout_mainNaviaContentFooter__c2HMt .layout_naviUl__sWycc li a {
+  text-decoration: none;
+  font-size: 0.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+.layout_mainNaviaContentFooter__c2HMt .layout_naviUl__sWycc li div {
+  display: flex;
+}
+.layout_mainNaviaContentFooter__c2HMt .layout_naviUl__sWycc .layout_active__lw0In {
+  height: 0.52rem;
+  background-color: #1989fa;
+}
