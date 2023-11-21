@@ -1,0 +1,54 @@
+.component_pageContainer {
+  padding: 0 0.3rem;
+  display: flex;
+  flex-direction: column;
+}
+.component_pageContainer .component_serachContent {
+  display: flex;
+  justify-content: center;
+  font-size: 0.2rem;
+  margin-top: 0.2rem;
+}
+.component_pageContainer .component_serachContent .component_serachInput {
+  border: 1px solid #fff;
+  border-radius: 2px;
+  display: flex;
+}
+.component_pageContainer .component_serachContent .component_serachInput input {
+  height: 0.45rem;
+  border: unset;
+  outline: unset;
+  padding: 0 4px;
+  background-color: #2b2929;
+  color: #fff;
+}
+.component_pageContainer .component_serachContent .component_searchBtnContext {
+  line-height: 0.45rem;
+  color: #fff;
+  background-color: #ff4d4f;
+  border-radius: 2px;
+  padding: 0 0.3rem;
+}
+.component_pageContainer .component_videoListWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1;
+  min-height: 65vh;
+}
+.component_pageContainer .component_footer {
+  display: flex;
+  justify-content: center;
+}
+.component_pageContainer .component_footer .component_naviUl {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.component_pageContainer .component_footer .component_naviUl li a {
+  color: #fff;
+  text-decoration: unset;
+  font-size: 0.18rem;
+  font-weight: 700;
+}

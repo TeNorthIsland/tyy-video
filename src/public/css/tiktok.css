@@ -1,0 +1,23 @@
+.FilterTiktok_categoryContent {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 0.1rem;
+}
+.FilterTiktok_categoryContent .FilterTiktok_lable {
+  font-size: 0.18rem;
+  font-weight: 700;
+  color: #fff;
+}
+.FilterTiktok_categoryContent .FilterTiktok_itemContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.FilterTiktok_categoryContent .FilterTiktok_itemContent p {
+  font-size: 0.18rem;
+  font-weight: 700;
+  color: #fff;
+  margin-left: 0.25rem;
+}

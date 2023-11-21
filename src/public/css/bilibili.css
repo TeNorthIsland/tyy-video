@@ -1,0 +1,44 @@
+.FilterBili_categoryContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.FilterBili_categoryContent .FilterBili_filterLine1 {
+  margin-top: 0.1rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.FilterBili_categoryContent .FilterBili_filterLine1 .FilterBili_lable {
+  font-size: 0.18rem;
+  font-weight: 700;
+  color: #fff;
+}
+.FilterBili_categoryContent .FilterBili_filterLine1 .FilterBili_itemContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.FilterBili_categoryContent .FilterBili_filterLine1 .FilterBili_itemContent p {
+  font-size: 0.18rem;
+  font-weight: 700;
+  color: #fff;
+  margin-left: 0.25rem;
+}
+.FilterBili_categoryContent .FilterBili_filterLine1 .FilterBili_sortContent {
+  margin-top: 0.1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.FilterBili_categoryContent .FilterBili_filterLine1 .FilterBili_sortContent p {
+  font-size: 0.16rem;
+  font-weight: 700;
+  color: #fff;
+  margin-left: 0.25rem;
+  background-color: #1890ff;
+  padding: 0.06rem 0.16rem;
+}

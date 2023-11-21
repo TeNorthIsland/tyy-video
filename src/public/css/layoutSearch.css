@@ -1,0 +1,75 @@
+.component_pageContainer {
+  padding: 0 0.3rem;
+  display: flex;
+  flex-direction: column;
+}
+.component_pageContainer .component_serachContent {
+  display: flex;
+  justify-content: center;
+  font-size: 0.2rem;
+  margin-top: 0.2rem;
+}
+.component_pageContainer .component_serachContent .component_serachInput {
+  border: 1px solid #434343;
+  border-radius: 2px;
+  display: flex;
+  width: 100%;
+}
+
+.component_pageContainer .component_serachContent .component_serachInput .rc-input-suffix {
+  background-color: #000000;
+}
+
+.component_pageContainer .component_serachContent .component_serachInput input {
+  /* height: 0.45rem; */
+  border: unset;
+  outline: unset;
+  padding: 0.03rem 0.06rem;
+  background-color: #000000;
+  color: #fff;
+  width: 100%;
+}
+
+/* input placeholder 颜色更改 */
+.component_pageContainer .component_serachContent .component_serachInput input::-webkit-input-placeholder { 
+  /* WebKit browsers，webkit内核浏览器 */
+  color: #ccc; 
+  font-size: 0.14rem;
+} 
+
+  
+.component_pageContainer .component_serachContent .component_searchBtnContext {
+  width: 0.36rem;
+  height: 0.3rem;
+  background-color: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.component_pageContainer .component_serachContent .component_searchBtnContext img {
+  width: 50%;
+}
+
+.component_pageContainer .component_videoListWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1;
+  min-height: 65vh;
+}
+.component_pageContainer .component_footer {
+  display: flex;
+  justify-content: center;
+}
+.component_pageContainer .component_footer .component_naviUl {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.component_pageContainer .component_footer .component_naviUl li a {
+  color: #fff;
+  text-decoration: unset;
+  font-size: 0.18rem;
+  font-weight: 700;
+}

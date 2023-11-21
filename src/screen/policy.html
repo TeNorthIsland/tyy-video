@@ -1,41 +1,73 @@
 <html lang="en">
+  <head>
+    <link rel="stylesheet" href="/public/css/common.css" crossorigin="" data-precedence="next" />
+    <link rel="stylesheet" href="/public/css/screen.css" crossorigin="" data-precedence="next" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <!-- jq -->
+    <script src="/public/js/lib/jquery-3.3.1.min.js"></script>
+    <script src="/public/js/lib/swiper-bundle.min.js"></script>
 
-<head>
-  <link rel="stylesheet" href="/public/styles/7caca498ec6fcb1e.css" crossorigin="" data-precedence="next">
-  <link rel="stylesheet" href="/public/styles/601d541cd230f9ba.css" crossorigin="" data-precedence="next">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
-  <title>TYY-Video</title>
-  <meta name="description" content="全网海量资源免费看,就来TYY-Video">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16">
-</head>
+    <title>TYY-Video</title>
+    <meta name="description" content="全网海量资源免费看,就来TYY-Video" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16" />
+  </head>
 
-<body id="main" class="__className_e66fe9">
-  <div class="layout_mainBody__atg6f">
-    <nav class="layout_mainNaviaContent__iDOtz">
-      <div class="layout_back__HWpQg"><img alt="Picture of the author" loading="lazy" width="0" height="0"
-          decoding="async" data-nimg="1" sizes="100vw"
-          srcset="/public/icon/left.png?w=640&amp;q=75 640w, /public/icon/left.png?w=750&amp;q=75 750w, /public/icon/left.png?w=828&amp;q=75 828w, /public/icon/left.png?w=1080&amp;q=75 1080w, /public/icon/left.png?w=1200&amp;q=75 1200w, /public/icon/left.png?w=1920&amp;q=75 1920w, /public/icon/left.png?w=2048&amp;q=75 2048w, /public/icon/left.png?w=3840&amp;q=75 3840w"
-          src="/public/icon/left.png?w=3840&amp;q=75"
-          style="color: transparent; width: 100%; height: auto;"></div>
-      <div>
-        <p>政策条款</p>
+  <body id="main" class="main_container">
+    <div class="layout_mainBody">
+      <nav class="layout_mainNaviaContent">
+        <div class="layout_back">
+          <img
+            alt="Picture of the author"
+            loading="lazy"
+            width="0"
+            height="0"
+            decoding="async"
+            data-nimg="1"
+            sizes="100vw"
+            srcset="
+              /public/icon/left.png?w=640&amp;q=75   640w,
+              /public/icon/left.png?w=750&amp;q=75   750w,
+              /public/icon/left.png?w=828&amp;q=75   828w,
+              /public/icon/left.png?w=1080&amp;q=75 1080w,
+              /public/icon/left.png?w=1200&amp;q=75 1200w,
+              /public/icon/left.png?w=1920&amp;q=75 1920w,
+              /public/icon/left.png?w=2048&amp;q=75 2048w,
+              /public/icon/left.png?w=3840&amp;q=75 3840w
+            "
+            src="/public/icon/left.png?w=3840&amp;q=75"
+            style="color: transparent; width: 100%; height: auto"
+          />
+        </div>
+        <div>
+          <p>政策条款</p>
+        </div>
+      </nav>
+      <div class="layout_content">
+        <div style="padding: 0.12rem">
+          <p style="color: rgb(255, 255, 255); font-size: 0.24rem; font-weight: bold; text-align: center; margin-bottom: 0.2rem">政策条款</p>
+          <p style="font-size: 0.16rem; color: rgb(255, 255, 255); margin-top: 0.2rem">二， 关于本服务</p>
+          <p style="font-size: 0.16rem; color: rgb(255, 255, 255); margin-top: 0.2rem">
+            本服务内容是指本软件客户端软件提供包括但不限于IOS及Android等多个版本，您必须选择与所安装手机相匹配的软件版本。
+          </p>
+          <p style="font-size: 0.16rem; color: rgb(255, 255, 255); margin-top: 0.2rem">三， 软件的获取</p>
+          <p style="font-size: 0.16rem; color: rgb(255, 255, 255); margin-top: 0.2rem">您可以直接从本软件授权的第三方获取。</p>
+        </div>
       </div>
-    </nav>
-    <div class="layout_content__a_b46">
-      <div style="padding: 0.12rem;">
-        <p
-          style="color: rgb(255, 255, 255); font-size: 0.24rem; font-weight: bold; text-align: center; margin-bottom: 0.2rem;">
-          政策条款</p>
-        <p style="font-size: 0.16rem; color: rgb(255, 255, 255); margin-top: 0.2rem;">二， 关于本服务</p>
-        <p style="font-size: 0.16rem; color: rgb(255, 255, 255); margin-top: 0.2rem;">
-          本服务内容是指本软件客户端软件提供包括但不限于IOS及Android等多个版本，您必须选择与所安装手机相匹配的软件版本。</p>
-        <p style="font-size: 0.16rem; color: rgb(255, 255, 255); margin-top: 0.2rem;">三， 软件的获取</p>
-        <p style="font-size: 0.16rem; color: rgb(255, 255, 255); margin-top: 0.2rem;">您可以直接从本软件授权的第三方获取。</p>
-      </div>
+      <nav class="layout_mainNaviaContentFooter"></nav>
+      <!-- toTop -->
+      <a href="javascript:;" id="toTop" title="回到顶部" class="to-top">
+        <svg t="1700530051638" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4017" width="200" height="200">
+          <path d="M511.609097 961.619254" fill="#ffffff" p-id="4018"></path>
+          <path
+            d="M846.620104 753.070474 511.629563 406.696676 172.304298 757.600651l0-0.017396c-11.521404 11.462053-27.132964 18.532075-44.375673 18.532075-35.320437 0-63.923892-29.600155-63.923892-66.109674 0-17.817808 6.831592-33.986045 17.917068-45.886073l0 0 383.580189-396.650879 0 0c11.643178-12.456706 27.930119-20.2236 46.006823-20.2236l0.12075 0 0.156566 0c18.076704 0 34.406624 7.766894 46.006823 20.2236l0.038886 0 383.54642 396.650879-0.160659 0.160659c11.042497 11.877515 17.796318 27.969005 17.796318 45.725414 0 36.509519-28.605501 66.109674-63.923892 66.109674C875.700419 776.11533 858.342076 767.175727 846.620104 753.070474L846.620104 753.070474zM846.620104 753.070474"
+            fill="#ffffff"
+            p-id="4019"
+          ></path>
+        </svg>
+      </a>
     </div>
-    <nav class="layout_mainNaviaContentFooter__i7I0a"></nav>
-  </div><next-route-announcer style="position: absolute;"></next-route-announcer>
-</body>
-
+    <next-route-announcer style="position: absolute"></next-route-announcer>
+  </body>
+  <script src="/public/js/page/common.js"></script>
 </html>

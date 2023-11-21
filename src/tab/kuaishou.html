@@ -1,133 +1,307 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/public/css/common.css" crossorigin="" data-precedence="next" />
+    <link rel="stylesheet" href="/public/css/common.css" crossorigin="" data-precedence="next" />
+    <link rel="stylesheet" href="/public/css/layoutSearch.css" crossorigin="" data-precedence="next" />
+    <!-- jq -->
+    <script src="/public/js/lib/jquery-3.3.1.min.js"></script>
+    <script src="/public/js/lib/swiper-bundle.min.js"></script>
 
-<head>
-  <meta charSet="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="/public/styles/7caca498ec6fcb1e.css" crossorigin="" data-precedence="next" />
-  <link rel="stylesheet" href="/public/styles/373e35d3121261af.css" crossorigin="" data-precedence="next" />
-  <link rel="stylesheet" href="/public/styles/38d58b3ee22f9364.css" crossorigin="" data-precedence="next" />
-  <link rel="stylesheet" href="/public/styles/234d8072ef3a97b9.css" crossorigin="" data-precedence="next" />
-  <title>TYY-Video</title>
-  <meta name="description" content="全网海量资源免费看,就来TYY-Video" />
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16" />
-</head>
+    <title>TYY-Video</title>
+    <meta name="description" content="全网海量资源免费看,就来TYY-Video" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16" />
+  </head>
 
-<body id="main" class="__className_e66fe9">
-  <div class="layout_mainBody__tcIb4">
-    <nav class="layout_mainNaviaContent__tRfvI">
-      <ul class="layout_naviUl__sWycc">
-        <li class="">
-          <div><a href="/">最新</a></div>
-        </li>
-        <li class="">
-          <div><a href="/tab/melon">西瓜</a></div>
-        </li>
-        <li class="">
-          <div><a href="/tab/tiktok">抖音</a></div>
-        </li>
-        <li class="layout_active__lw0In">
-          <div><a href="/tab/kuaishou">快手</a></div>
-        </li>
-        <li class="">
-          <div><a href="/tab/bilibili">哔哩</a></div>
-        </li>
-      </ul>
-    </nav>
-    <div class="layout_content__yuOY5">
-      <div class="component_pageContainer___NVpO">
-        <div class="component_serachContent__8JN2P"><span
-            class="rc-input-affix-wrapper component_serachInput__WoVGP"><input class="rc-input" placeholder="搜索你想看的内容"
-              type="text" value="" /><span class="rc-input-suffix">
-              <div class="component_searchBtnContext__JB0oR"><span>搜索</span></div>
-            </span></span></div>
-        <div class="component_videoListWrap__UlLxj">
-          <div class="swiper component_swiperContent__kvcF7">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img alt="Picture of the author" loading="lazy" width="0" height="0"
-                  decoding="async" data-nimg="1" style="color:transparent;width:100%;height:auto" sizes="100vw"
-                  srcSet="/public/imgs/banner/ad1.png?w=640&amp;q=75 640w, /public/imgs/banner/ad1.png?w=750&amp;q=75 750w, /public/imgs/banner/ad1.png?w=828&amp;q=75 828w, /public/imgs/banner/ad1.png?w=1080&amp;q=75 1080w, /public/imgs/banner/ad1.png?w=1200&amp;q=75 1200w, /public/imgs/banner/ad1.png?w=1920&amp;q=75 1920w, /public/imgs/banner/ad1.png?w=2048&amp;q=75 2048w, /public/imgs/banner/ad1.png?w=3840&amp;q=75 3840w"
-                  src="/public/imgs/banner/ad1.png?w=3840&amp;q=75" /></div>
-              <div class="swiper-slide"><img alt="Picture of the author" loading="lazy" width="0" height="0"
-                  decoding="async" data-nimg="1" style="color:transparent;width:100%;height:auto" sizes="100vw"
-                  srcSet="/public/imgs/banner/ad2.png?w=640&amp;q=75 640w, /public/imgs/banner/ad2.png?w=750&amp;q=75 750w, /public/imgs/banner/ad2.png?w=828&amp;q=75 828w, /public/imgs/banner/ad2.png?w=1080&amp;q=75 1080w, /public/imgs/banner/ad2.png?w=1200&amp;q=75 1200w, /public/imgs/banner/ad2.png?w=1920&amp;q=75 1920w, /public/imgs/banner/ad2.png?w=2048&amp;q=75 2048w, /public/imgs/banner/ad2.png?w=3840&amp;q=75 3840w"
-                  src="/public/imgs/banner/ad2.png?w=3840&amp;q=75" /></div>
-              <div class="swiper-slide"><img alt="Picture of the author" loading="lazy" width="0" height="0"
-                  decoding="async" data-nimg="1" style="color:transparent;width:100%;height:auto" sizes="100vw"
-                  srcSet="/public/imgs/banner/ad3.png?w=640&amp;q=75 640w, /public/imgs/banner/ad3.png?w=750&amp;q=75 750w, /public/imgs/banner/ad3.png?w=828&amp;q=75 828w, /public/imgs/banner/ad3.png?w=1080&amp;q=75 1080w, /public/imgs/banner/ad3.png?w=1200&amp;q=75 1200w, /public/imgs/banner/ad3.png?w=1920&amp;q=75 1920w, /public/imgs/banner/ad3.png?w=2048&amp;q=75 2048w, /public/imgs/banner/ad3.png?w=3840&amp;q=75 3840w"
-                  src="/public/imgs/banner/ad3.png?w=3840&amp;q=75" /></div>
-            </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-pagination"></div>
+  <body id="main" class="main_container">
+    <div class="layout_mainBody">
+      <nav class="layout_mainNaviaContent">
+        <ul class="layout_naviUl">
+          <li class="">
+            <div><a href="/">最新</a></div>
+          </li>
+          <li class="">
+            <div><a href="/tab/melon">西瓜</a></div>
+          </li>
+          <li class="">
+            <div><a href="/tab/tiktok">抖音</a></div>
+          </li>
+          <li class="layout_active">
+            <div><a href="/tab/kuaishou">快手</a></div>
+          </li>
+          <li class="">
+            <div><a href="/tab/bilibili">哔哩</a></div>
+          </li>
+        </ul>
+      </nav>
+      <div class="layout_content">
+        <div class="component_pageContainer">
+          <div class="component_serachContent">
+            <span class="rc-input-affix-wrapper component_serachInput"
+              ><input class="rc-input" placeholder="请输入片名、演员" type="text" value="" /><span class="rc-input-suffix">
+                <div class="component_searchBtnContext">
+                  <img src="/public/icon/search.png" alt="" sizes="" srcset="" />
+                </div> </span
+            ></span>
           </div>
-          <div class="component_videoListWrap__Ni9ST">
-            <div class="component_videoListContent__iZmmA"><a class="component_videoItem__IKhF5"
-                href="/screen/videoDetails?pageName=%E8%AF%A6%E6%83%85">
-                <div class="component_videoTitle__4sinn"><span>蛋仔派对：蛋仔岛大更新？我变成了椅子</span></div>
-                <div class="component_thumbnailContent__aQ5P6"><img alt="Picture of the author" loading="lazy" width="0"
-                    height="0" decoding="async" data-nimg="1" style="color:transparent;width:100%;height:auto"
+          <div class="component_videoListWrap">
+            <div class="swiper component_swiperContent">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    alt="Picture of the author"
+                    loading="lazy"
+                    width="0"
+                    height="0"
+                    decoding="async"
+                    data-nimg="1"
+                    style="color: transparent; width: 100%; height: auto"
                     sizes="100vw"
-                    srcSet="/public/imgs/thumbnail/thumbnail1.png?w=640&amp;q=75 640w, /public/imgs/thumbnail/thumbnail1.png?w=750&amp;q=75 750w, /public/imgs/thumbnail/thumbnail1.png?w=828&amp;q=75 828w, /public/imgs/thumbnail/thumbnail1.png?w=1080&amp;q=75 1080w, /public/imgs/thumbnail/thumbnail1.png?w=1200&amp;q=75 1200w, /public/imgs/thumbnail/thumbnail1.png?w=1920&amp;q=75 1920w, /public/imgs/thumbnail/thumbnail1.png?w=2048&amp;q=75 2048w, /public/imgs/thumbnail/thumbnail1.png?w=3840&amp;q=75 3840w"
-                    src="/public/imgs/thumbnail/thumbnail1.png?w=3840&amp;q=75" /></div>
-              </a><a class="component_videoItem__IKhF5" href="/screen/videoDetails?pageName=%E8%AF%A6%E6%83%85">
-                <div class="component_videoTitle__4sinn"><span>拆除43：卧龙附近，必有凤雏</span></div>
-                <div class="component_thumbnailContent__aQ5P6"><img alt="Picture of the author" loading="lazy" width="0"
-                    height="0" decoding="async" data-nimg="1" style="color:transparent;width:100%;height:auto"
+                    srcset="
+                      /public/imgs/banner/ad1.png?w=640&amp;q=75   640w,
+                      /public/imgs/banner/ad1.png?w=750&amp;q=75   750w,
+                      /public/imgs/banner/ad1.png?w=828&amp;q=75   828w,
+                      /public/imgs/banner/ad1.png?w=1080&amp;q=75 1080w,
+                      /public/imgs/banner/ad1.png?w=1200&amp;q=75 1200w,
+                      /public/imgs/banner/ad1.png?w=1920&amp;q=75 1920w,
+                      /public/imgs/banner/ad1.png?w=2048&amp;q=75 2048w,
+                      /public/imgs/banner/ad1.png?w=3840&amp;q=75 3840w
+                    "
+                    src="/public/imgs/banner/ad1.png?w=3840&amp;q=75"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    alt="Picture of the author"
+                    loading="lazy"
+                    width="0"
+                    height="0"
+                    decoding="async"
+                    data-nimg="1"
+                    style="color: transparent; width: 100%; height: auto"
                     sizes="100vw"
-                    srcSet="/public/imgs/thumbnail/thumbnail2.png?w=640&amp;q=75 640w, /public/imgs/thumbnail/thumbnail2.png?w=750&amp;q=75 750w, /public/imgs/thumbnail/thumbnail2.png?w=828&amp;q=75 828w, /public/imgs/thumbnail/thumbnail2.png?w=1080&amp;q=75 1080w, /public/imgs/thumbnail/thumbnail2.png?w=1200&amp;q=75 1200w, /public/imgs/thumbnail/thumbnail2.png?w=1920&amp;q=75 1920w, /public/imgs/thumbnail/thumbnail2.png?w=2048&amp;q=75 2048w, /public/imgs/thumbnail/thumbnail2.png?w=3840&amp;q=75 3840w"
-                    src="/public/imgs/thumbnail/thumbnail2.png?w=3840&amp;q=75" /></div>
-              </a></div>
-            <div class="paginationContent">
-              <ul class="rc-pagination pagination">
-                <li title="上一页" tabindex="0" class="rc-pagination-prev" aria-disabled="false"><span
-                    class="nextIncon">上一页</span></li>
-                <li title="1" class="rc-pagination-item rc-pagination-item-1" tabindex="0"><a rel="nofollow">1</a></li>
-                <li title="2" class="rc-pagination-item rc-pagination-item-2 rc-pagination-item-active" tabindex="0"><a
-                    rel="nofollow">2</a></li>
-                <li title="3" class="rc-pagination-item rc-pagination-item-3 rc-pagination-item-before-jump-next"
-                  tabindex="0"><a rel="nofollow">3</a></li>
-                <li title="向后 3 页" tabindex="0" class="rc-pagination-jump-next"><button type="button"
-                    aria-label="next page" class="rc-pagination-item-link"></button></li>
-                <li title="12" class="rc-pagination-item rc-pagination-item-12" tabindex="0"><a rel="nofollow">12</a>
-                </li>
-                <li title="下一页" tabindex="0" class="rc-pagination-next" aria-disabled="false"><span
-                    class="nextIncon">下一页</span></li>
-                <li class="rc-pagination-options"></li>
-              </ul>
+                    srcset="
+                      /public/imgs/banner/ad2.png?w=640&amp;q=75   640w,
+                      /public/imgs/banner/ad2.png?w=750&amp;q=75   750w,
+                      /public/imgs/banner/ad2.png?w=828&amp;q=75   828w,
+                      /public/imgs/banner/ad2.png?w=1080&amp;q=75 1080w,
+                      /public/imgs/banner/ad2.png?w=1200&amp;q=75 1200w,
+                      /public/imgs/banner/ad2.png?w=1920&amp;q=75 1920w,
+                      /public/imgs/banner/ad2.png?w=2048&amp;q=75 2048w,
+                      /public/imgs/banner/ad2.png?w=3840&amp;q=75 3840w
+                    "
+                    src="/public/imgs/banner/ad2.png?w=3840&amp;q=75"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    alt="Picture of the author"
+                    loading="lazy"
+                    width="0"
+                    height="0"
+                    decoding="async"
+                    data-nimg="1"
+                    style="color: transparent; width: 100%; height: auto"
+                    sizes="100vw"
+                    srcset="
+                      /public/imgs/banner/ad3.png?w=640&amp;q=75   640w,
+                      /public/imgs/banner/ad3.png?w=750&amp;q=75   750w,
+                      /public/imgs/banner/ad3.png?w=828&amp;q=75   828w,
+                      /public/imgs/banner/ad3.png?w=1080&amp;q=75 1080w,
+                      /public/imgs/banner/ad3.png?w=1200&amp;q=75 1200w,
+                      /public/imgs/banner/ad3.png?w=1920&amp;q=75 1920w,
+                      /public/imgs/banner/ad3.png?w=2048&amp;q=75 2048w,
+                      /public/imgs/banner/ad3.png?w=3840&amp;q=75 3840w
+                    "
+                    src="/public/imgs/banner/ad3.png?w=3840&amp;q=75"
+                  />
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="component_videoListWrap">
+              <div class="component_videoListContent">
+                <a class="component_videoItem" href="/screen/videoDetails?pageName=%E8%AF%A6%E6%83%85">
+                  <div class="thumbnial-tag1-wrap">
+                    <span>高清</span>
+                  </div>
+                  <div class="thumbnial-tag2-wrap">
+                    <span>免费</span>
+                    <span>免费</span>
+                    <span>免费</span>
+                  </div>
+                  <div class="component_videoTitle"><span>蛋仔派对：蛋仔岛大更新？我变成了椅子</span></div>
+                  <div class="component_thumbnailContent">
+                    <img
+                      alt="Picture of the author"
+                      loading="lazy"
+                      width="0"
+                      height="0"
+                      decoding="async"
+                      data-nimg="1"
+                      style="color: transparent; width: 100%; height: auto"
+                      sizes="100vw"
+                      srcset="
+                        /public/imgs/thumbnail/thumbnail1.png?w=640&amp;q=75   640w,
+                        /public/imgs/thumbnail/thumbnail1.png?w=750&amp;q=75   750w,
+                        /public/imgs/thumbnail/thumbnail1.png?w=828&amp;q=75   828w,
+                        /public/imgs/thumbnail/thumbnail1.png?w=1080&amp;q=75 1080w,
+                        /public/imgs/thumbnail/thumbnail1.png?w=1200&amp;q=75 1200w,
+                        /public/imgs/thumbnail/thumbnail1.png?w=1920&amp;q=75 1920w,
+                        /public/imgs/thumbnail/thumbnail1.png?w=2048&amp;q=75 2048w,
+                        /public/imgs/thumbnail/thumbnail1.png?w=3840&amp;q=75 3840w
+                      "
+                      src="/public/imgs/thumbnail/thumbnail1.png?w=3840&amp;q=75"
+                    />
+                  </div> </a
+                ><a class="component_videoItem" href="/screen/videoDetails?pageName=%E8%AF%A6%E6%83%85">
+                  <div class="thumbnial-tag1-wrap">
+                    <span>高清</span>
+                  </div>
+                  <div class="thumbnial-tag2-wrap">
+                    <span>免费</span>
+                    <span>免费</span>
+                    <span>免费</span>
+                  </div>
+                  <div class="component_videoTitle"><span>拆除43：卧龙附近，必有凤雏</span></div>
+                  <div class="component_thumbnailContent">
+                    <img
+                      alt="Picture of the author"
+                      loading="lazy"
+                      width="0"
+                      height="0"
+                      decoding="async"
+                      data-nimg="1"
+                      style="color: transparent; width: 100%; height: auto"
+                      sizes="100vw"
+                      srcset="
+                        /public/imgs/thumbnail/thumbnail2.png?w=640&amp;q=75   640w,
+                        /public/imgs/thumbnail/thumbnail2.png?w=750&amp;q=75   750w,
+                        /public/imgs/thumbnail/thumbnail2.png?w=828&amp;q=75   828w,
+                        /public/imgs/thumbnail/thumbnail2.png?w=1080&amp;q=75 1080w,
+                        /public/imgs/thumbnail/thumbnail2.png?w=1200&amp;q=75 1200w,
+                        /public/imgs/thumbnail/thumbnail2.png?w=1920&amp;q=75 1920w,
+                        /public/imgs/thumbnail/thumbnail2.png?w=2048&amp;q=75 2048w,
+                        /public/imgs/thumbnail/thumbnail2.png?w=3840&amp;q=75 3840w
+                      "
+                      src="/public/imgs/thumbnail/thumbnail2.png?w=3840&amp;q=75"
+                    />
+                  </div>
+                </a>
+              </div>
+              <!-- 格式1 -->
+              <div class="paginationContent">
+                <ul class="rc-pagination pagination">
+                  <li title="上一页" tabindex="0" class="rc-pagination-prev" aria-disabled="false">
+                    <span class="nextIncon">上一页</span>
+                  </li>
+                  <li title="2" class="rc-pagination-item rc-pagination-item-2 rc-pagination-item-active" tabindex="0">
+                    <a rel="nofollow">2</a>
+                  </li>
+                  <li title="search" class="rc-pagination-search rc-pagination-item">
+                    <svg t="1700484223699" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1601" width="200" height="200">
+                      <path
+                        d="M959.744 870.592l-199.808-199.808a382.08 382.08 0 0 0 71.552-222.72c0-212.032-171.968-384-384-384S64 235.968 64 448s171.456 384 383.488 384a381.952 381.952 0 0 0 222.72-71.552l199.808 199.808 89.728-89.664zM447.488 704a256 256 0 1 1 0-512 256 256 0 0 1 0 512z"
+                        p-id="1602"
+                        fill="#ffffff"
+                      ></path>
+                    </svg>
+                  </li>
+                  <li title="下一页" tabindex="0" class="rc-pagination-next" aria-disabled="false">
+                    <span class="nextIncon">下一页</span>
+                  </li>
+                  <li class="rc-pagination-options"></li>
+                </ul>
+              </div>
+              <!-- 格式2 -->
+              <div class="paginationContent">
+                <ul class="rc-pagination pagination">
+                  <li title="2" class="rc-pagination-item rc-pagination-item-2 rc-pagination-item-active" tabindex="0">
+                    <a rel="nofollow">1</a>
+                  </li>
+                  <li title="search" class="rc-pagination-search rc-pagination-item">
+                    <svg t="1700484223699" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1601" width="200" height="200">
+                      <path
+                        d="M959.744 870.592l-199.808-199.808a382.08 382.08 0 0 0 71.552-222.72c0-212.032-171.968-384-384-384S64 235.968 64 448s171.456 384 383.488 384a381.952 381.952 0 0 0 222.72-71.552l199.808 199.808 89.728-89.664zM447.488 704a256 256 0 1 1 0-512 256 256 0 0 1 0 512z"
+                        p-id="1602"
+                        fill="#ffffff"
+                      ></path>
+                    </svg>
+                  </li>
+                  <li title="下一页" tabindex="0" class="rc-pagination-next" aria-disabled="false">
+                    <span class="nextIncon">下一页</span>
+                  </li>
+                  <li class="rc-pagination-options"></li>
+                </ul>
+              </div>
+              <!-- 格式3 -->
+              <div class="paginationContent">
+                <ul class="rc-pagination pagination">
+                  <li title="上一页" tabindex="0" class="rc-pagination-prev" aria-disabled="false">
+                    <span class="nextIncon">上一页</span>
+                  </li>
+                  <li title="2" class="rc-pagination-item rc-pagination-item-2 rc-pagination-item-active" tabindex="0">
+                    <a rel="nofollow">2</a>
+                  </li>
+                  <li title="search" class="rc-pagination-search rc-pagination-item">
+                    <svg t="1700484223699" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1601" width="200" height="200">
+                      <path
+                        d="M959.744 870.592l-199.808-199.808a382.08 382.08 0 0 0 71.552-222.72c0-212.032-171.968-384-384-384S64 235.968 64 448s171.456 384 383.488 384a381.952 381.952 0 0 0 222.72-71.552l199.808 199.808 89.728-89.664zM447.488 704a256 256 0 1 1 0-512 256 256 0 0 1 0 512z"
+                        p-id="1602"
+                        fill="#ffffff"
+                      ></path>
+                    </svg>
+                  </li>
+                  <li class="rc-pagination-options"></li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="component_footer__kE0qb">
-          <ul class="component_naviUl__TtN_M">
-            <li><a href="/screen/updatePlan?pageName=%E4%BC%9A%E5%91%98%E6%96%B9%E6%A1%88">会员方案</a></li>
-            <li><a href="/screen/agreement?pageName=%E7%94%A8%E6%88%B7%E6%9D%A1%E6%AC%BE">用户条款</a></li>
-            <li><a href="/screen/policy?pageName=%E6%94%BF%E7%AD%96%E6%9D%A1%E6%AC%BE">政策条款</a></li>
-            <li><a href="/tab/chat?pageName=%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC">联系我们</a></li>
-          </ul>
+          <div class="component_footer">
+            <ul class="component_naviUl">
+              <li><a href="/screen/updatePlan?pageName=%E4%BC%9A%E5%91%98%E6%96%B9%E6%A1%88">会员方案</a></li>
+              <li><a href="/screen/agreement?pageName=%E7%94%A8%E6%88%B7%E6%9D%A1%E6%AC%BE">用户条款</a></li>
+              <li><a href="/screen/policy?pageName=%E6%94%BF%E7%AD%96%E6%9D%A1%E6%AC%BE">政策条款</a></li>
+              <li><a href="/tab/chat?pageName=%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC">联系我们</a></li>
+            </ul>
+          </div>
         </div>
       </div>
+      <!-- toTop -->
+      <a href="javascript:;" id="toTop" title="回到顶部" class="to-top">
+        <svg t="1700530051638" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4017" width="200" height="200">
+          <path d="M511.609097 961.619254" fill="#ffffff" p-id="4018"></path>
+          <path
+            d="M846.620104 753.070474 511.629563 406.696676 172.304298 757.600651l0-0.017396c-11.521404 11.462053-27.132964 18.532075-44.375673 18.532075-35.320437 0-63.923892-29.600155-63.923892-66.109674 0-17.817808 6.831592-33.986045 17.917068-45.886073l0 0 383.580189-396.650879 0 0c11.643178-12.456706 27.930119-20.2236 46.006823-20.2236l0.12075 0 0.156566 0c18.076704 0 34.406624 7.766894 46.006823 20.2236l0.038886 0 383.54642 396.650879-0.160659 0.160659c11.042497 11.877515 17.796318 27.969005 17.796318 45.725414 0 36.509519-28.605501 66.109674-63.923892 66.109674C875.700419 776.11533 858.342076 767.175727 846.620104 753.070474L846.620104 753.070474zM846.620104 753.070474"
+            fill="#ffffff"
+            p-id="4019"
+          ></path>
+        </svg>
+      </a>
+      <nav class="layout_mainNaviaContentFooter">
+        <ul class="layout_naviUl">
+          <li class="">
+            <div><a href="/tab/category">分类</a></div>
+          </li>
+          <li class="">
+            <div><a href="/tab/like">我喜欢</a></div>
+          </li>
+          <li class="">
+            <div><a href="/tab/vip">会员</a></div>
+          </li>
+          <li class="">
+            <div><a href="/tab/gameDownload">小程序</a></div>
+          </li>
+          <li class="">
+            <div><a href="/tab/chat">客服</a></div>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav class="layout_mainNaviaContentFooter__c2HMt">
-      <ul class="layout_naviUl__sWycc">
-        <li class="">
-          <div><a href="/tab/category">分类</a></div>
-        </li>
-        <li class="">
-          <div><a href="/tab/like">我喜欢的</a></div>
-        </li>
-        <li class="">
-          <div><a href="/tab/vip">会员</a></div>
-        </li>
-        <li class="">
-          <div><a href="/tab/gameDownload">小程序</a></div>
-        </li>
-        <li class="">
-          <div><a href="/tab/chat">客服</a></div>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</body>
-
+  </body>
+  <script src="/public/js/page/common.js"></script>
 </html>

@@ -1,0 +1,64 @@
+.layout_mainBody {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.layout_mainNaviaContent {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  padding: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333333;
+  height: 0.52rem;
+}
+.layout_mainNaviaContent p {
+  font-size: 0.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+.layout_mainNaviaContent .layout_back {
+  left: 0.12rem;
+  position: absolute;
+  width: 0.24rem;
+  display: flex;
+}
+.layout_content {
+  flex: 1 1;
+  background-color: #252525;
+  padding: 0.65rem 0;
+}
+.layout_mainNaviaContentFooter {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
+}
+.layout_mainNaviaContentFooter .layout_naviUl__Hu2i8 {
+  padding: unset;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  background-color: #333333;
+  height: 0.52rem;
+}
+.layout_mainNaviaContentFooter .layout_naviUl__Hu2i8 li {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.layout_mainNaviaContentFooter .layout_naviUl__Hu2i8 li p {
+  font-size: 0.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+.layout_mainNaviaContentFooter .layout_naviUl__Hu2i8 .layout_active__5B799 {
+  height: 0.52rem;
+  background-color: #1989fa;
+}

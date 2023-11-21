@@ -1,0 +1,60 @@
+.page_title {
+  color: #fff;
+}
+.page_title p {
+  margin-top: 0.48rem;
+  font-size: 0.2rem;
+  font-weight: 700;
+}
+.page_from {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page_from .page_input {
+  width: 85%;
+  display: flex;
+  margin-top: 0.45rem;
+}
+.page_from .page_input input:before {
+  display: inline-block;
+  content: '';
+  height: 100%;
+  width: 0.01rem;
+  background-color: #fff;
+}
+.page_from .page_input input {
+  width: 100%;
+  font-size: 0.2rem;
+  outline: unset;
+  background: unset;
+  border: 1px solid #fff;
+  padding: 0.1rem 0.2rem;
+  color: #fff;
+  border-radius: 0.05rem;
+}
+.page_from .page_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.48rem;
+}
+.page_from .page_btn .page_submit {
+  padding: 0 0.3rem;
+  background-color: #1989fa;
+  color: #fff;
+  border: unset;
+  height: 0.46rem;
+  border-radius: 0.05rem;
+}
+.page_from .page_btn .page_extent {
+  position: absolute;
+  right: 0.55rem;
+}
+.page_from .page_btn .page_extent span {
+  font-size: 0.16rem;
+  color: #fff;
+  margin-left: 0.24rem;
+  padding: 0.1rem;
+}

@@ -1,0 +1,118 @@
+.layout_mainBody {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.layout_mainNaviaContent {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+.layout_mainNaviaContent .layout_naviUl {
+  padding: unset;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  background-color: #333333;
+  height: 0.52rem;
+}
+.layout_mainNaviaContent .layout_naviUl li {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.layout_mainNaviaContent .layout_naviUl li::after {
+  width: 70%;
+  content: '';
+  display: inline-block;
+  height: 0.04rem;
+  /* background-color: #ff2828; */
+  margin-top: 0.05rem;
+  padding: 0 0.02rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.layout_mainNaviaContent .layout_naviUl li p {
+  font-size: 0.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+.layout_mainNaviaContent .layout_naviUl li a {
+  text-decoration: none;
+  font-size: 0.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+.layout_mainNaviaContent .layout_naviUl li div {
+  display: flex;
+}
+.layout_mainNaviaContent .layout_naviUl .layout_active {
+  height: 0.52rem;
+}
+
+.layout_mainNaviaContent .layout_naviUl  .layout_active::after {
+  width: 70%;
+  content: '';
+  display: inline-block;
+  height: 0.04rem;
+  background-color: #ff2828;
+  margin-top: 0.05rem;
+  padding: 0 0.02rem;
+  position: absolute;
+  bottom: 0;
+}
+
+
+.layout_content {
+  flex: 1 1;
+  background-color: #252525;
+  padding: 0.45rem 0;
+}
+.layout_mainNaviaContentFooter {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
+}
+.layout_mainNaviaContentFooter .layout_naviUl {
+  padding: unset;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  background-color: #333333;
+  height: 0.52rem;
+}
+.layout_mainNaviaContentFooter .layout_naviUl li {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.layout_mainNaviaContentFooter .layout_naviUl li p {
+  font-size: 0.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+.layout_mainNaviaContentFooter .layout_naviUl li a {
+  text-decoration: none;
+  font-size: 0.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+.layout_mainNaviaContentFooter .layout_naviUl li div {
+  display: flex;
+}
+.layout_mainNaviaContentFooter .layout_naviUl .layout_active {
+  height: 0.52rem;
+  background-color: #c41162;
+}
