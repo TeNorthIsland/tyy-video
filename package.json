@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "serve ./src -p 3333"
+    "start": "serve ./src -p 4000"
   },
   "dependencies": {
     "serve": "^14.2.1"
