@@ -483,29 +483,7 @@
     display: none;
   }
 }
-.paginationContent .pagination {
-  border: 1px solid #165dff;
-}
-.paginationContent .pagination .nextIncon {
-  color: #165dff;
-}
-.paginationContent .pagination li {
-  margin: unset;
-  border: unset;
-  padding: 0 0.12rem;
-}
-.paginationContent .pagination > .rc-pagination-item {
-  background-color: #2b2929;
-}
-.paginationContent .pagination > .rc-pagination-item a {
-  color: #fff;
-}
-.paginationContent .pagination > .rc-pagination-item-active {
-  background-color: #ff16e9;
-}
-.paginationContent .pagination > .rc-pagination-item-active a {
-  color: #fff;
-}
+
 .component_videoListWrap {
   width: 100%;
   display: flex;

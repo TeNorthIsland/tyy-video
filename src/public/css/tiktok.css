@@ -6,8 +6,8 @@
   margin-top: 0.1rem;
 }
 .FilterTiktok_categoryContent .FilterTiktok_lable {
-  font-size: 0.18rem;
-  font-weight: 700;
+  font-size: 0.16rem;
+  font-weight: 500;
   color: #fff;
   background-color: #424242;
   padding: 0.04rem 0.06rem;
@@ -18,8 +18,8 @@
   align-items: center;
 }
 .FilterTiktok_categoryContent .FilterTiktok_itemContent p {
-  font-size: 0.18rem;
-  font-weight: 700;
+  font-size: 0.16rem;
+  font-weight: 500;
   color: #fff;
   margin-left: 0.25rem;
   padding: 0.04rem 0.06rem;
