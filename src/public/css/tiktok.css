@@ -9,6 +9,8 @@
   font-size: 0.18rem;
   font-weight: 700;
   color: #fff;
+  background-color: #424242;
+  padding: 0.04rem 0.06rem;
 }
 .FilterTiktok_categoryContent .FilterTiktok_itemContent {
   display: flex;
@@ -20,4 +22,9 @@
   font-weight: 700;
   color: #fff;
   margin-left: 0.25rem;
+  padding: 0.04rem 0.06rem;
 }
+.FilterTiktok_categoryContent .FilterTiktok_itemContent .active {
+  background-color: #ef5350;
+}
+/*  */

@@ -11,28 +11,35 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  font-size: 0.16rem;
 }
 .FilterBili_categoryContent .FilterBili_filterLine1 .FilterBili_lable {
   font-size: 0.18rem;
   font-weight: 700;
   color: #fff;
+  background-color: #424242;
+  padding: 0.04rem 0.06rem;
 }
 .FilterBili_categoryContent .FilterBili_filterLine1 .FilterBili_itemContent {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
+.FilterBili_categoryContent .FilterBili_filterLine1 .FilterBili_itemContent .active {
+  background-color: #ef5350;
+}
 .FilterBili_categoryContent .FilterBili_filterLine1 .FilterBili_itemContent p {
   font-size: 0.18rem;
   font-weight: 700;
   color: #fff;
   margin-left: 0.25rem;
+  padding: 0.04rem 0.06rem;
 }
 .FilterBili_categoryContent .FilterBili_filterLine1 .FilterBili_sortContent {
-  margin-top: 0.1rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  width: 1.3rem;
+}
+.FilterBili_categoryContent .FilterBili_filterLine1 .FilterBili_sortContent:last-child {
+  margin-left: 0.4rem;
 }
 .FilterBili_categoryContent .FilterBili_filterLine1 .FilterBili_sortContent p {
   font-size: 0.16rem;
@@ -41,4 +48,26 @@
   margin-left: 0.25rem;
   background-color: #1890ff;
   padding: 0.06rem 0.16rem;
+}
+
+.FilterBili_sortContent #salutation-button {
+  width: 100%;
+  background: #de5e56;
+  color: #fff;
+  border: unset;
+}
+
+.FilterBili_sortContent #salutation2-button {
+  width: 100%;
+  background: unset;
+  color: #fff;
+  border: unset;
+}
+
+.ui-selectmenu-menu.ui-front.ui-selectmenu-open {
+  font-size: 0.16rem;
+}
+
+.ui-selectmenu-menu.ui-front.ui-selectmenu-open .ui-menu-item-wrapper {
+  text-align: center;
 }

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/public/css/layoutSearch.css" crossorigin="" data-precedence="next" />
     <link rel="stylesheet" href="/public/css/pageFrom.css" crossorigin="" data-precedence="next" />
     <link rel="stylesheet" href="/public/css/findPwd.css" crossorigin="" data-precedence="next" />
+    <link rel="stylesheet" href="/public/css/login.css" crossorigin="" data-precedence="next" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <!-- jq -->
@@ -49,25 +50,16 @@
       </nav>
       <div class="layout_content">
         <div class="component_pageContainer">
-          <div class="component_serachContent">
-            <span class="rc-input-affix-wrapper component_serachInput">
-              <input class="rc-input" placeholder="请输入片名、演员" type="text" value="" />
-              <span class="rc-input-suffix">
-                <div class="component_searchBtnContext">
-                  <img src="/public/icon/search.png" alt="" sizes="" srcset="" />
-                </div>
-              </span>
-            </span>
-          </div>
+          
           <div class="component_videoListWrap">
             <div class="page_title">
-              <p>登录</p>
+              <p>登录邮箱或手机</p>
             </div>
             <form class="page_from">
-              <div class="page_input"><input placeholder="请输入邮箱或手机号" name="name" /></div>
-              <div class="page_input"><input placeholder="请输入密码" type="password" name="pwd" /></div>
+              <div class="page_input"><input placeholder="登录的邮箱或手机" name="name" /></div>
+              <div class="page_input"><input placeholder="密码" type="password" name="pwd" /></div>
               <div class="page_btn">
-                <input class="page_submit" type="submit" value="登录" /><a class="page_extent" href="/screen/findPwd?pageName=%E5%BF%98%E8%AE%B0%E5%AF%86%E7%A0%81"><span>忘记密码</span></a>
+                <input class="page_submit" type="submit" value="送出" /><a class="page_extent" href="/screen/findPwd?pageName=%E5%BF%98%E8%AE%B0%E5%AF%86%E7%A0%81"><span>忘记密码</span></a>
               </div>
             </form>
           </div>

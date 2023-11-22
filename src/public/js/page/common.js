@@ -49,6 +49,16 @@ $(document).ready(function () {
       return false
     })
   })
+
+  // download app modal
+  $('#downoad_program').click(function (param) {
+    // open modal
+    $('#modal').appendTo('body').modal({
+      showClose: false,
+    })
+  })
+
+  $('#modal').addClass('modal-download')
 })
 
 // swiper-button-next

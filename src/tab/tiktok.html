@@ -49,8 +49,8 @@
           <div class="component_videoListWrap">
             <div class="FilterTiktok_categoryContent">
               <div class="FilterTiktok_lable">类别：</div>
-              <div class="FilterTiktok_itemContent">
-                <p>全部</p>
+              <div id="FilterTiktok_itemContent" class="FilterTiktok_itemContent">
+                <p class="active">全部</p>
                 <p>短视频</p>
                 <p>长视频</p>
               </div>
@@ -134,16 +134,16 @@
             <div class="component_videoListWrap">
               <div class="component_videoListContent">
                 <a class="component_videoItem" href="/screen/videoDetails?pageName=%E8%AF%A6%E6%83%85">
-                  <div class="thumbnial-tag1-wrap">
-                    <span>高清</span>
-                  </div>
-                  <div class="thumbnial-tag2-wrap">
-                    <span>免费</span>
-                    <span>免费</span>
-                    <span>免费</span>
-                  </div>
                   <div class="component_videoTitle"><span>蛋仔派对：蛋仔岛大更新？我变成了椅子</span></div>
                   <div class="component_thumbnailContent">
+                    <div class="thumbnial-tag1-wrap">
+                      <span>高清</span>
+                    </div>
+                    <div class="thumbnial-tag2-wrap">
+                      <span>免费</span>
+                      <span>免费</span>
+                      <span>免费</span>
+                    </div>
                     <img
                       alt="Picture of the author"
                       loading="lazy"
@@ -167,16 +167,17 @@
                     />
                   </div> </a
                 ><a class="component_videoItem" href="/screen/videoDetails?pageName=%E8%AF%A6%E6%83%85">
-                  <div class="thumbnial-tag1-wrap">
-                    <span>高清</span>
-                  </div>
-                  <div class="thumbnial-tag2-wrap">
-                    <span>免费</span>
-                    <span>免费</span>
-                    <span>免费</span>
-                  </div>
+                  
                   <div class="component_videoTitle"><span>拆除43：卧龙附近，必有凤雏</span></div>
                   <div class="component_thumbnailContent">
+                    <div class="thumbnial-tag1-wrap">
+                      <span>高清</span>
+                    </div>
+                    <div class="thumbnial-tag2-wrap">
+                      <span>免费</span>
+                      <span>免费</span>
+                      <span>免费</span>
+                    </div>
                     <img
                       alt="Picture of the author"
                       loading="lazy"
@@ -312,4 +313,5 @@
     </div>
   </body>
   <script src="/public/js/page/common.js"></script>
+  <script src="/public/js/page/tiktok.js"></script>
 </html>

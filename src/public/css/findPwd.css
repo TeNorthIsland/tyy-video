@@ -34,6 +34,10 @@
   color: #fff;
   border-radius: 0.05rem;
 }
+.page_from .page_input input:first-child {
+  border-top-right-radius: unset;
+  border-bottom-right-radius: unset;
+}
 .page_from .page_btn {
   display: flex;
   justify-content: center;
@@ -57,4 +61,78 @@
   color: #fff;
   margin-left: 0.24rem;
   padding: 0.1rem;
+}
+
+/* 重新布局 */
+.layout_content {
+}
+
+.layout_content .component_pageContainer {
+  padding: unset;
+}
+
+.layout_content .component_pageContainer .page_title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #313131;
+  align-items: center;
+}
+.layout_content .component_pageContainer .page_title p {
+  margin: unset;
+  padding: 24px 0;
+}
+
+.page_from .page_input {
+  margin-top: 0.2rem;
+}
+.page_from .sendValue {
+  /* position: absolute; */
+  color: #fff;
+  background-color: #3d8bf2;
+  font-size: 0.2rem;
+  width: 100px;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-top-right-radius: 0.05rem;
+  border-bottom-right-radius: 0.05rem;
+}
+.page_from .page_btn .page_extent {
+  display: flex;
+  bottom: -40px;
+  right: -10px;
+}
+.page_from .page_btn {
+  width: 85%;
+  margin-top: 0.2rem;
+  display: flex;
+}
+
+.page_from .page_btn .page_submit {
+  width: 100%;
+  font-size: 0.2rem;
+}
+
+.page_from .page_input input {
+  background-color: #fff;
+}
+
+.component_footer .component_naviUl a {
+  display: flex;
+}
+
+.component_videoListWrap {
+  min-height: unset !important;
+}
+
+.page_from {
+  margin: unset;
+}
+
+.component_footer {
+  margin-top: 0.5rem;
 }

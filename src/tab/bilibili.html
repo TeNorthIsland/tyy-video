@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="/public/css/common.css" crossorigin="" data-precedence="next" />
     <link rel="stylesheet" href="/public/css/layoutSearch.css" crossorigin="" data-precedence="next" />
     <link rel="stylesheet" href="/public/css/bilibili.css" crossorigin="" data-precedence="next" />
+    <link rel="stylesheet" href="/public/css/jquery-ui.css" crossorigin="" data-precedence="next" />
     <title>TYY-Video</title>
     <!-- jq -->
     <script src="/public/js/lib/jquery-3.3.1.min.js"></script>
     <script src="/public/js/lib/swiper-bundle.min.js"></script>
+    <script src="/public/js/lib/jquery-ui.js"></script>
+    
 
     <meta name="description" content="全网海量资源免费看,就来TYY-Video" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16" />
@@ -51,18 +54,29 @@
             <div class="FilterBili_categoryContent">
               <div class="FilterBili_filterLine1">
                 <div class="FilterBili_lable">类别：</div>
-                <div class="FilterBili_itemContent">
-                  <p>全部</p>
+                <div id="FilterBili_itemContent" class="FilterBili_itemContent">
+                  <p class="active">全部</p>
                   <p>短视频</p>
                   <p>长视频</p>
                 </div>
               </div>
               <div class="FilterBili_filterLine1">
-                <div class="FilterBili_lable">排序：</div>
                 <div class="FilterBili_sortContent">
-                  <p>热门推荐</p>
-                  <p>热门收藏</p>
+                  <select data-expand="热门排行(&)" name="salutation" id="salutation">
+                    <option>本日</option>
+                    <option selected="selected">本周</option>
+                    <option>本月</option>
+                  </select>
                 </div>
+
+                <div class="FilterBili_sortContent">
+                  <select data-expand="热门收藏(&)"  name="salutation2" id="salutation2">
+                    <option>本日</option>
+                    <option selected="selected">本周</option>
+                    <option>本月</option>
+                  </select>
+                </div>
+                
               </div>
             </div>
             <div class="swiper component_swiperContent">
@@ -144,16 +158,17 @@
             <div class="component_videoListWrap">
               <div class="component_videoListContent">
                 <a class="component_videoItem" href="/screen/videoDetails?pageName=%E8%AF%A6%E6%83%85">
-                  <div class="thumbnial-tag1-wrap">
-                    <span>高清</span>
-                  </div>
-                  <div class="thumbnial-tag2-wrap">
-                    <span>免费</span>
-                    <span>免费</span>
-                    <span>免费</span>
-                  </div>
+                 
                   <div class="component_videoTitle"><span>蛋仔派对：蛋仔岛大更新？我变成了椅子</span></div>
                   <div class="component_thumbnailContent">
+                    <div class="thumbnial-tag1-wrap">
+                      <span>高清</span>
+                    </div>
+                    <div class="thumbnial-tag2-wrap">
+                      <span>免费</span>
+                      <span>免费</span>
+                      <span>免费</span>
+                    </div>
                     <img
                       alt="Picture of the author"
                       loading="lazy"
@@ -177,16 +192,17 @@
                     />
                   </div> </a
                 ><a class="component_videoItem" href="/screen/videoDetails?pageName=%E8%AF%A6%E6%83%85">
-                  <div class="thumbnial-tag1-wrap">
-                    <span>高清</span>
-                  </div>
-                  <div class="thumbnial-tag2-wrap">
-                    <span>免费</span>
-                    <span>免费</span>
-                    <span>免费</span>
-                  </div>
+                 
                   <div class="component_videoTitle"><span>拆除43：卧龙附近，必有凤雏</span></div>
                   <div class="component_thumbnailContent">
+                    <div class="thumbnial-tag1-wrap">
+                      <span>高清</span>
+                    </div>
+                    <div class="thumbnial-tag2-wrap">
+                      <span>免费</span>
+                      <span>免费</span>
+                      <span>免费</span>
+                    </div>
                     <img
                       alt="Picture of the author"
                       loading="lazy"
@@ -322,4 +338,5 @@
     </div>
   </body>
   <script src="/public/js/page/common.js"></script>
+  <script src="/public/js/page/bilibili.js"></script>
 </html>

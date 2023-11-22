@@ -1,0 +1,52 @@
+.vip-header-screen a {
+  width: 100%;
+}
+.page_vipHeaderContent .page_vipNameDes {
+  width: 50%;
+  font-size: 0.14rem;
+  text-align: center;
+  margin-bottom: 0.2rem;
+}
+
+.page_pannerContent .page_lable {
+  font-size: 0.2rem;
+  padding: 0.1rem 0;
+  background-color: #457ab1;
+  color: #fff;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0.1rem;
+  border-radius: 0.05rem;
+}
+
+.page_modalContent .page_submit p {
+  width: 100%;
+  text-align: center;
+  padding: 0.1rem 0.15rem;
+}
+
+.page_modalContent .page_submit {
+  margin-top: 0.2rem;
+  padding: unset;
+}
+
+/* 复写modal 布局 */
+
+.modal-vip-order-info {
+  width: 90% !important;
+}
+
+/* 通用数据 css */
+.disabled-button-blue p {
+  background-color: #84a9cc !important;
+}
+
+.modal-vip-order-info .modal-title {
+  background-color: #c88350;
+  color: #fff;
+}
+
+.modal-content.page_modalContent .page_line {
+  width: 100%;
+}
