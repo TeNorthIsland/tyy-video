@@ -344,6 +344,9 @@
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
+.page_vipContent .page_tabWrap .page_tabTitle span.page_active a {
+  color: #000;
+}
 .page_vipContent .page_tabWrap .page_tabPanner .page_pannerWrap {
   display: flex;
   flex-direction: column;
@@ -402,4 +405,9 @@ td {
 
 #user-order-list {
   border: unset;
+}
+
+
+.layout_content  {
+  background-color: #000;
 }

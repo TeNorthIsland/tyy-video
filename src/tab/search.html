@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/public/css/common.css" crossorigin="" data-precedence="next" />
+    <link rel="stylesheet" href="/public/css/common.css" crossorigin="" data-precedence="next" />
+    <link rel="stylesheet" href="/public/css/layoutSearch.css" crossorigin="" data-precedence="next" />
+    <link rel="stylesheet" href="/public/css/bilibili.css" crossorigin="" data-precedence="next" />
+    <link rel="stylesheet" href="/public/css/jquery-ui.css" crossorigin="" data-precedence="next" />
+    <link rel="stylesheet" href="/public/css/search.css" crossorigin="" data-precedence="next" />
+    <title>TYY-Video</title>
+    <!-- jq -->
+    <script src="/public/js/lib/jquery-3.3.1.min.js"></script>
+    <script src="/public/js/lib/swiper-bundle.min.js"></script>
+    <script src="/public/js/lib/jquery-ui.js"></script>
+
+    <meta name="description" content="全网海量资源免费看,就来TYY-Video" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16" />
+  </head>
+
+  <body id="main" class="main_container">
+    <div class="layout_mainBody">
+      <nav class="layout_mainNaviaContent">
+        <ul class="layout_naviUl">
+          <li class="">
+            <div><a href="/">最新</a></div>
+          </li>
+          <li class="">
+            <div><a href="/tab/melon">西瓜</a></div>
+          </li>
+          <li class="">
+            <div><a href="/tab/tiktok">抖音</a></div>
+          </li>
+          <li class="">
+            <div><a href="/tab/kuaishou">快手</a></div>
+          </li>
+          <li class="">
+            <div><a href="/tab/bilibili">哔哩</a></div>
+          </li>
+        </ul>
+      </nav>
+      <div class="layout_content">
+        <div class="component_pageContainer">
+          <div class="component_serachContent">
+            <span class="rc-input-affix-wrapper component_serachInput"
+              ><input class="rc-input" placeholder="请输入片名、演员" type="text" value="" /><span class="rc-input-suffix">
+                <div class="component_searchBtnContext">
+                  <img src="/public/icon/search.png" alt="" sizes="" srcset="" />
+                </div> </span
+            ></span>
+          </div>
+          <div class="component_videoListWrap">
+            <div class="search-key">
+              <span>xxx 的视频</span>
+            </div>
+
+            <div class="FilterBili_categoryContent">
+              <div class="FilterBili_filterLine1">
+                <div class="FilterBili_lable">类别：</div>
+                <div id="FilterBili_itemContent" class="FilterBili_itemContent">
+                  <p class="active">全部</p>
+                  <p>短视频</p>
+                  <p>长视频</p>
+                </div>
+              </div>
+              <div class="FilterBili_filterLine1">
+                <div class="FilterBili_lable">排序：</div>
+                <div id="FilterBili_itemContent2" class="FilterBili_itemContent">
+                  <p class="active">最新</p>
+                  <p>观看数</p>
+                  <p>喜欢数</p>
+                </div>
+              </div>
+              <!-- <div class="FilterBili_filterLine1">
+                <div class="FilterBili_sortContent">
+                  <select data-expand="热门排行(&)" name="salutation" id="salutation">
+                    <option>本日</option>
+                    <option selected="selected">本周</option>
+                    <option>本月</option>
+                  </select>
+                </div>
+
+                <div class="FilterBili_sortContent">
+                  <select data-expand="热门收藏(&)" name="salutation2" id="salutation2">
+                    <option>本日</option>
+                    <option selected="selected">本周</option>
+                    <option>本月</option>
+                  </select>
+                </div>
+              </div> -->
+            </div>
+
+            <div class="component_videoListWrap">
+              <div class="component_videoListContent">
+                <p class="not-fonud">对不起,无相关的视频</p>
+              </div>
+            </div>
+
+            <div class="about-hot">
+              <div>最火的视频</div>
+              <!-- <div> video list container  </div> -->
+            </div>
+          </div>
+          <div class="component_footer">
+            <ul class="component_naviUl">
+              <li><a href="/screen/updatePlan?pageName=%E4%BC%9A%E5%91%98%E6%96%B9%E6%A1%88">会员方案</a></li>
+              <li><a href="/screen/agreement?pageName=%E7%94%A8%E6%88%B7%E6%9D%A1%E6%AC%BE">用户条款</a></li>
+              <li><a href="/screen/policy?pageName=%E6%94%BF%E7%AD%96%E6%9D%A1%E6%AC%BE">政策条款</a></li>
+              <li><a href="/tab/chat?pageName=%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC">联系我们</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- toTop -->
+      <a href="javascript:;" id="toTop" title="回到顶部" class="to-top">
+        <svg t="1700530051638" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4017" width="200" height="200">
+          <path d="M511.609097 961.619254" fill="#ffffff" p-id="4018"></path>
+          <path
+            d="M846.620104 753.070474 511.629563 406.696676 172.304298 757.600651l0-0.017396c-11.521404 11.462053-27.132964 18.532075-44.375673 18.532075-35.320437 0-63.923892-29.600155-63.923892-66.109674 0-17.817808 6.831592-33.986045 17.917068-45.886073l0 0 383.580189-396.650879 0 0c11.643178-12.456706 27.930119-20.2236 46.006823-20.2236l0.12075 0 0.156566 0c18.076704 0 34.406624 7.766894 46.006823 20.2236l0.038886 0 383.54642 396.650879-0.160659 0.160659c11.042497 11.877515 17.796318 27.969005 17.796318 45.725414 0 36.509519-28.605501 66.109674-63.923892 66.109674C875.700419 776.11533 858.342076 767.175727 846.620104 753.070474L846.620104 753.070474zM846.620104 753.070474"
+            fill="#ffffff"
+            p-id="4019"
+          ></path>
+        </svg>
+      </a>
+      <nav class="layout_mainNaviaContentFooter">
+        <ul class="layout_naviUl">
+          <li class="">
+            <div><a href="/tab/category">分类</a></div>
+          </li>
+          <li class="">
+            <div><a href="/tab/like">我喜欢</a></div>
+          </li>
+          <li class="">
+            <div><a href="/tab/vip">会员</a></div>
+          </li>
+          <li class="">
+            <div><a href="/tab/gameDownload">小程序</a></div>
+          </li>
+          <li class="">
+            <div><a href="/tab/chat">客服</a></div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+  <script src="/public/js/page/common.js"></script>
+  <script src="/public/js/page/search.js"></script>
+</html>

@@ -1,0 +1,42 @@
+.search-key {
+  width: 100%;
+  display: flex;
+  font-size: 0.18rem;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  margin-top: 0.14rem;
+  padding-bottom: 0.06rem;
+}
+
+.search-key span {}
+
+.component_videoListWrap {
+  width: 100%;
+  min-height: unset !important;
+}
+.component_videoListContent {
+  width: 100%;
+}
+.component_videoListContent .not-fonud {
+  width: 100%;
+  display: flex;
+  font-size: 0.18rem;
+  color: #fff;
+  border-top: 1px solid #fff;
+  margin-top: 0.14rem;
+  padding-top: 0.06rem;
+}
+
+.component_videoListWrap {
+
+}
+
+.about-hot {
+  width: 100%;
+  display: flex;
+  font-size: 0.18rem;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  margin-top: 0.4rem;
+  padding-bottom: 0.06rem;
+}

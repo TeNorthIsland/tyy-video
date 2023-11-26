@@ -59,6 +59,18 @@ $(document).ready(function () {
   })
 
   $('#modal').addClass('modal-download')
+
+  // footer navi
+  $('#footer-home').click(function (param) {
+    window.location.href = '/'
+  })
+  $('#footer-back').click(function (param) {
+    window.history.back()
+  })
+
+  $('#rc-input-suffix').click(function (param) {
+    window.location.href = '/tab/search'
+  })
 })
 
 // swiper-button-next

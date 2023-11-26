@@ -9,6 +9,17 @@ $(document).ready(function () {
     },
   })
 
+  // 附加的一个效果
+  $('#vip-info-collapse-screen').bind('opened', function (e, section) {
+    const domEle = $(section.$summary[0])
+    domEle.addClass('rc-collapse-content-active')
+  })
+
+  $('#vip-info-collapse-screen').bind('closed', function (e, section) {
+    const domEle = $(section.$summary[0])
+    domEle.removeClass('rc-collapse-content-active')
+  })
+
   // modal
   $('#page_pannerContent').each(function (index, element) {
     $(element).click(function (param) {

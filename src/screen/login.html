@@ -21,36 +21,26 @@
   <body id="main" class="main_container">
     <div class="layout_mainBody">
       <nav class="layout_mainNaviaContent">
-        <div class="layout_back">
-          <img
-            alt="Picture of the author"
-            loading="lazy"
-            width="0"
-            height="0"
-            decoding="async"
-            data-nimg="1"
-            sizes="100vw"
-            srcset="
-              /public/icon/left.png?w=640&amp;q=75   640w,
-              /public/icon/left.png?w=750&amp;q=75   750w,
-              /public/icon/left.png?w=828&amp;q=75   828w,
-              /public/icon/left.png?w=1080&amp;q=75 1080w,
-              /public/icon/left.png?w=1200&amp;q=75 1200w,
-              /public/icon/left.png?w=1920&amp;q=75 1920w,
-              /public/icon/left.png?w=2048&amp;q=75 2048w,
-              /public/icon/left.png?w=3840&amp;q=75 3840w
-            "
-            src="/public/icon/left.png?w=3840&amp;q=75"
-            style="color: transparent; width: 100%; height: auto"
-          />
-        </div>
-        <div>
-          <p>登录</p>
-        </div>
+        <ul class="layout_naviUl">
+          <li>
+            <div><a href="/">最新</a></div>
+          </li>
+          <li class="">
+            <div><a href="/tab/melon">西瓜</a></div>
+          </li>
+          <li class="">
+            <div><a href="/tab/tiktok">抖音</a></div>
+          </li>
+          <li class="">
+            <div><a href="/tab/kuaishou">快手</a></div>
+          </li>
+          <li class="">
+            <div><a href="/tab/bilibili">哔哩</a></div>
+          </li>
+        </ul>
       </nav>
       <div class="layout_content">
         <div class="component_pageContainer">
-          
           <div class="component_videoListWrap">
             <div class="page_title">
               <p>登录邮箱或手机</p>
@@ -84,7 +74,40 @@
           ></path>
         </svg>
       </a>
-      <nav class="layout_mainNaviaContentFooter"></nav>
+      <nav class="layout_mainNaviaContentFooter">
+        <!-- layout -->
+        <div class="footer">
+          <span id="footer-menu">
+            <svg t="1700643495588" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5036" width="200" height="200">
+              <path
+                d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zM904 784H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zM904 472H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"
+                p-id="5037"
+                fill="#bfbfbf"
+              ></path>
+            </svg>
+          </span>
+
+          <span id="footer-home">
+            <svg t="1700643950879" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="9420" width="200" height="200">
+              <path
+                d="M832 928.00086l-640 0c-52.9288 0-96.00086-43.07206-96.00086-95.99914l0-640c0-52.9288 43.07206-96.00086 96.00086-96.00086l640 0c52.92708 0 95.99914 43.07206 95.99914 96.00086l0 640C928.00086 884.9288 884.9288 928.00086 832 928.00086zM192 160.00086c-17.632039 0-32.00086 14.368821-32.00086 32.00086l0 640c0 17.664722 14.368821 31.99914 32.00086 31.99914l640 0c17.664722 0 31.99914-14.336138 31.99914-31.99914l0-640c0-17.632039-14.336138-32.00086-31.99914-32.00086L192 160.00086z"
+                fill="#bfbfbf"
+                p-id="9421"
+              ></path>
+            </svg>
+          </span>
+
+          <span id="footer-back">
+            <svg t="1700643893821" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8345" width="200" height="200">
+              <path
+                d="M198.656 582.570667a85.333333 85.333333 0 0 1 0-141.141334l425.386667-288.981333c56.661333-38.485333 133.290667 2.133333 133.290666 70.613333v577.877334c0 68.48-76.629333 109.056-133.290666 70.613333l-425.386667-288.981333zM246.613333 512l425.386667 288.938667V223.061333L246.613333 512z"
+                fill="#bfbfbf"
+                p-id="8346"
+              ></path>
+            </svg>
+          </span>
+        </div>
+      </nav>
     </div>
     <next-route-announcer style="position: absolute"></next-route-announcer>
   </body>

@@ -27,4 +27,12 @@ $(document).ready(function () {
     lable[0].style.transform = 'rotate(0deg)'
     // 实现一个动画效果
   })
+
+  // a标签点击的时候改变颜色
+  // $('a', '#rc-collapse').each(function (index, element) {
+  //   $(element).click(function () {
+  //     $(element).addClass('active-link')
+  //     $(element).siblings().removeClass('active-link')
+  //   })
+  // })
 })

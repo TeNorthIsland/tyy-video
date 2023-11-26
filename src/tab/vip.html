@@ -38,14 +38,6 @@
       </nav>
       <div class="layout_content">
         <div class="component_pageContainer">
-          <div class="component_serachContent">
-            <span class="rc-input-affix-wrapper component_serachInput"
-              ><input class="rc-input" placeholder="请输入片名、演员" type="text" value="" /><span class="rc-input-suffix">
-                <div class="component_searchBtnContext">
-                  <img src="/public/icon/search.png" alt="" sizes="" srcset="" />
-                </div> </span
-            ></span>
-          </div>
           <div class="component_videoListWrap">
             <div class="page_vipContent">
               <div class="page_currentVipLevel">
@@ -63,7 +55,6 @@
                   <span data-key="user-order-list" class="">交易纪录</span>
                 </div>
                 <div class="page_tabPanner">
-
                   <div id="user-info" class="page_pannerWrap active">
                     <div class="page_line">
                       <div><span>目前账号</span></div>
@@ -93,26 +84,26 @@
                   <div id="user-order-list" class="page_pannerWrap">
                     <table>
                       <thead>
-                          <tr>
-                              <th>交易编号</th>
-                              <th>方案</th>
-                              <th>支付方式</th>
-                              <th>金额</th>
-                              <th>时间</th>
-                              <th>备注</th>
-                          </tr>
+                        <tr>
+                          <th>交易编号</th>
+                          <th>方案</th>
+                          <th>支付方式</th>
+                          <th>金额</th>
+                          <th>时间</th>
+                          <th>备注</th>
+                        </tr>
                       </thead>
                       <tbody>
-                          <tr>
-                              <td>Data 1</td>
-                              <td>Data 2</td>
-                              <td>Data 3</td>
-                              <td>Data 4</td>
-                              <td>Data 5</td>
-                              <td>Data 6</td>
-                          </tr>
+                        <tr>
+                          <td>Data 1</td>
+                          <td>Data 2</td>
+                          <td>Data 3</td>
+                          <td>Data 4</td>
+                          <td>Data 5</td>
+                          <td>Data 6</td>
+                        </tr>
                       </tbody>
-                  </table>
+                    </table>
                     <!-- <div class="page_line">
                       <div><span>目前账号</span></div>
                       <div><span>UPP22(临时账号)</span></div>
@@ -147,35 +138,43 @@
           </div>
         </div>
       </div>
-      <!-- toTop -->
-      <a href="javascript:;" id="toTop" title="回到顶部" class="to-top">
-        <svg t="1700530051638" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4017" width="200" height="200">
-          <path d="M511.609097 961.619254" fill="#ffffff" p-id="4018"></path>
-          <path
-            d="M846.620104 753.070474 511.629563 406.696676 172.304298 757.600651l0-0.017396c-11.521404 11.462053-27.132964 18.532075-44.375673 18.532075-35.320437 0-63.923892-29.600155-63.923892-66.109674 0-17.817808 6.831592-33.986045 17.917068-45.886073l0 0 383.580189-396.650879 0 0c11.643178-12.456706 27.930119-20.2236 46.006823-20.2236l0.12075 0 0.156566 0c18.076704 0 34.406624 7.766894 46.006823 20.2236l0.038886 0 383.54642 396.650879-0.160659 0.160659c11.042497 11.877515 17.796318 27.969005 17.796318 45.725414 0 36.509519-28.605501 66.109674-63.923892 66.109674C875.700419 776.11533 858.342076 767.175727 846.620104 753.070474L846.620104 753.070474zM846.620104 753.070474"
-            fill="#ffffff"
-            p-id="4019"
-          ></path>
-        </svg>
+      <!-- chat -->
+      <a href="javascript:;" id="chat" title="回到顶部" class="chat">
+        <img src="/public/icon/chat.jpg" alt="" srcset="" />
       </a>
       <nav class="layout_mainNaviaContentFooter">
-        <ul class="layout_naviUl">
-          <li class="">
-            <div><a href="/tab/category">分类</a></div>
-          </li>
-          <li class="">
-            <div><a href="/tab/like">我喜欢</a></div>
-          </li>
-          <li class="layout_active">
-            <div><a href="/tab/vip">会员</a></div>
-          </li>
-          <li class="">
-            <div><a href="/tab/gameDownload">小程序</a></div>
-          </li>
-          <li class="">
-            <div><a href="/tab/chat">客服</a></div>
-          </li>
-        </ul>
+        <!-- layout -->
+        <div class="footer">
+          <span id="footer-menu">
+            <svg t="1700643495588" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5036" width="200" height="200">
+              <path
+                d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zM904 784H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zM904 472H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"
+                p-id="5037"
+                fill="#bfbfbf"
+              ></path>
+            </svg>
+          </span>
+
+          <span id="footer-home">
+            <svg t="1700643950879" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="9420" width="200" height="200">
+              <path
+                d="M832 928.00086l-640 0c-52.9288 0-96.00086-43.07206-96.00086-95.99914l0-640c0-52.9288 43.07206-96.00086 96.00086-96.00086l640 0c52.92708 0 95.99914 43.07206 95.99914 96.00086l0 640C928.00086 884.9288 884.9288 928.00086 832 928.00086zM192 160.00086c-17.632039 0-32.00086 14.368821-32.00086 32.00086l0 640c0 17.664722 14.368821 31.99914 32.00086 31.99914l640 0c17.664722 0 31.99914-14.336138 31.99914-31.99914l0-640c0-17.632039-14.336138-32.00086-31.99914-32.00086L192 160.00086z"
+                fill="#bfbfbf"
+                p-id="9421"
+              ></path>
+            </svg>
+          </span>
+
+          <span id="footer-back">
+            <svg t="1700643893821" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8345" width="200" height="200">
+              <path
+                d="M198.656 582.570667a85.333333 85.333333 0 0 1 0-141.141334l425.386667-288.981333c56.661333-38.485333 133.290667 2.133333 133.290666 70.613333v577.877334c0 68.48-76.629333 109.056-133.290666 70.613333l-425.386667-288.981333zM246.613333 512l425.386667 288.938667V223.061333L246.613333 512z"
+                fill="#bfbfbf"
+                p-id="8346"
+              ></path>
+            </svg>
+          </span>
+        </div>
       </nav>
     </div>
   </body>

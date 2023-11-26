@@ -71,3 +71,9 @@
 .component_footer {
   margin-top: 0.5rem;
 }
+
+
+.layout_content {
+  padding: 0.5rem 0;
+  background-color: #000;
+}
