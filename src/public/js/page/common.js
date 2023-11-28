@@ -71,6 +71,37 @@ $(document).ready(function () {
   $('#rc-input-suffix').click(function (param) {
     window.location.href = '/tab/search'
   })
+
+  // ad-link btn open modal
+  $('.ad-link').click(function (e) {
+    e.preventDefault()
+    // open modal
+    $('#modal').appendTo('body').modal({
+      showClose: false,
+    })
+  })
+
+  // disabled-button-blue
+
+  // reful
+  const ptr = PullToRefresh.init({
+    onRefresh() {
+      window.location.reload()
+    },
+    distThreshold: 60,
+    // distMax: 60,
+    distReload: 50, // 释放之后元素应该达到的一个高度
+    distIgnore: 0,
+    mainElement: '#component_pageContainer',
+    // triggerElement: '#component_pageContainer',
+    ptrElement: '.ptr',
+    classPrefix: 'ptr--',
+    cssProp: 'min-height',
+    instructionsPullToRefresh: '刷新页面',
+    instructionsReleaseToRefresh: '刷新页面',
+    instructionsRefreshing: '刷新中',
+    // refreshTimeout: 1000 * 60,
+  })
 })
 
 // swiper-button-next

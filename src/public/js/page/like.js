@@ -6,7 +6,7 @@ $(document).ready(function () {
   $('.like-delete').each((a, ele, c) => {
     $(ele).click(function (param) {
       // open modal
-      $('#modal').appendTo('body').modal({
+      $('#modal-delete-content').appendTo('body').modal({
         showClose: false,
       })
       $('#modal-delete').attr('data-id', ele.dataset.vid)
@@ -32,4 +32,6 @@ $(document).ready(function () {
       $(`#${ID_VIDEO_LIST}`).show()
     }
   })
+
+  $('#modal-delete-content').hide()
 })

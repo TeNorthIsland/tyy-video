@@ -729,7 +729,7 @@ span {
 }
 .component_videoListWrap .component_videoListContent .component_videoItem {
   display: inline-block;
-  margin-top: 0.15rem;
+  /* margin-top: 0.05rem; */
   position: relative;
 }
 
@@ -747,6 +747,21 @@ span {
   color: #fff;
   padding: 0.02rem 0.1rem;
   border-radius: 0.04rem;
+}
+
+.component_videoListWrap .component_videoListContent .component_videoItem .time-total {
+  display: flex;
+  position: absolute;
+  bottom: 0.1rem;
+  right: 0.1rem;
+}
+.component_videoListWrap .component_videoListContent .component_videoItem .time-total span {
+  font-size: 0.18rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 0.05rem 0.05rem;
+  border-radius: 0.04rem;
+  margin-right: 0.08rem;
 }
 
 .component_videoListWrap .component_videoListContent .component_videoItem .thumbnial-tag2-wrap {
@@ -769,19 +784,25 @@ span {
 .component_videoListWrap .component_videoListContent .component_videoItem .component_videoTitle {
   font-size: 0.18rem;
   font-weight: 700;
-  color: #fff;
+  color:#EBD0BA;
   margin-bottom: 0.1rem;
 }
 .component_videoListWrap .component_videoListContent .component_videoItem .component_thumbnailContent {
   width: 3.87rem;
   height: 2.33rem;
-  padding: 0.04rem;
-  background-color: #fff;
+  /* padding: 0.04rem; */
+  /* background-color: #fff; */
+  overflow: hidden;
   border-radius: 0.04rem;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+}
+.component_videoListWrap .component_videoListContent .component_videoItem .component_thumbnailContent img{
+  width: 100%;
+  height: 100% !important;
+  object-fit: cover;
 }
 .component_videoListWrap .component_paginationContent__FzVHI .component_pagination__ORVAJ {
   border: 1px solid #165dff;
@@ -952,4 +973,85 @@ span {
   width: 100%;
   background-color: unset;
   
+}
+
+/* 11.26 modify */
+.component_videoListWrap .component_videoListContent .component_videoItem .component_videoTitle {
+  font-size: 0.18rem;
+  font-weight: 700;
+  margin-top: 0.1rem;
+}
+
+/* ad-link */
+.component_videoListWrap .ad-link {
+  width: 100%;
+  font-size: 0.18rem;
+  display: flex;
+  margin-top: 0.12rem;
+}
+.component_videoListWrap .ad-link a{
+  text-decoration: none;
+  font-size: 0.18rem;
+}
+
+.color-yellow {
+  color: #EBD0BA;
+}
+
+.color-yellow span,a {
+  color: #EBD0BA;
+}
+
+
+.refresh-component_pageContainer div {
+  padding: unset !important;
+}
+.refresh-component_pageContainer i {
+  /* padding: unset !important; */
+  font-size: 0.35rem !important;
+
+}
+
+/* reful */
+.ptr--ptr.ptr--refresh {
+  padding-top: 0.12rem !important;
+}
+.ptr--icon,
+.ptr--text {
+  font-size: 0.16rem;
+  color: #fff !important;
+}
+
+.main_container {
+  position: relative;
+}
+
+.chatra-wrapper {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* 通用变量 */
+.display-none {
+  display: none;
+}
+
+/* 追加totals 的展示  */
+.paginationContent {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.total-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+.total-info  span {
+    font-size: 18px;
+    color: #dacfd2;
+    font-weight: 500;
 }

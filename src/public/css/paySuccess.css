@@ -1,0 +1,89 @@
+.content-info {
+  padding: 0.24rem;
+}
+
+.info-1 {
+  width: 100%;
+}
+
+.info-1 p {
+  font-size: 0.16rem;
+  color: #fff; 
+}
+
+.info-1 p:nth-child(3) {
+  margin-top: 0.24rem;
+}
+
+.info-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.24rem;
+}
+
+.info-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.24rem;
+}
+
+.info-button span {
+  width: 80%;
+  font-size: 0.16rem;
+  color:#fff;
+  background-color: #5cb55d;
+  text-align: center;
+  padding: 0.12rem 0.16rem;
+  border-radius: 0.05rem;
+}
+
+table {
+  /* border-bottom: 1px solid #fff; */
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 2px solid #ddd;
+}
+
+th,
+td {
+  border: 1px solid #ddd; /* 添加单元格边框 */
+  padding: 8px;
+  text-align: left;
+  font-size: 0.14rem;
+  color: #fff;
+}
+
+.info-des {
+  margin-top: 0.24rem;
+  width: 100%;
+}
+
+.info-des p {
+  text-align: center;
+  color: #fff;
+  font-size: 0.16rem;
+}
+
+.info-wrap {
+  margin-top: 0.24rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.info-wrap span {
+  color: #fff;
+  font-size: 0.16rem;
+}
+
+.info-wrap span:first-child {
+  color: #fff;
+  padding: 0.12rem 0.16rem;
+  background-color: #d8534f;
+  border-radius: 0.05rem;
+}
+

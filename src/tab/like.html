@@ -55,7 +55,7 @@
               <div class="FilterLike_lable">类别：</div>
               <div id="FilterLike_itemContent" class="FilterLike_itemContent">
                 <p data-key="user-like-video-list" class="active">喜欢的视频</p>
-                <p data-key="user-like-list" >关注的用户</p>
+                <p data-key="user-like-list">关注的用户</p>
               </div>
             </div>
 
@@ -93,6 +93,9 @@
                       "
                       src="/public/imgs/thumbnail/thumbnail1.png?w=3840&amp;q=75"
                     />
+                    <div class="time-total">
+                      <span>04:12</span>
+                    </div>
                   </div>
                 </a>
                 <div class="component_videoTitle">
@@ -146,6 +149,9 @@
                       "
                       src="/public/imgs/thumbnail/thumbnail2.png?w=3840&amp;q=75"
                     />
+                    <div class="time-total">
+                      <span>04:12</span>
+                    </div>
                   </div>
                 </a>
 
@@ -174,7 +180,7 @@
               <!-- item -->
               <div class="like-item">
                 <div class="user-avatar">
-                  <img src="/public/imgs/userLike/user-like.jpg" alt="">
+                  <img src="/public/imgs/userLike/user-like.jpg" alt="" />
                 </div>
                 <div class="user-like-title-wrap">
                   <span>用户1</span>
@@ -196,7 +202,7 @@
               </div>
               <div class="like-item">
                 <div class="user-avatar">
-                  <img src="/public/imgs/userLike/user-like.jpg" alt="">
+                  <img src="/public/imgs/userLike/user-like.jpg" alt="" />
                 </div>
                 <div class="user-like-title-wrap">
                   <span>用户1</span>
@@ -218,7 +224,7 @@
               </div>
               <div class="like-item">
                 <div class="user-avatar">
-                  <img src="/public/imgs/userLike/user-like.jpg" alt="">
+                  <img src="/public/imgs/userLike/user-like.jpg" alt="" />
                 </div>
                 <div class="user-like-title-wrap">
                   <span>用户1</span>
@@ -273,15 +279,29 @@
             <div><a href="/tab/vip">会员</a></div>
           </li>
           <li class="">
-            <div><a href="/tab/gameDownload">小程序</a></div>
+            <div><a href="#modal" id="downoad_program">小程序</a></div>
           </li>
           <li class="">
             <div><a href="/tab/chat">客服</a></div>
           </li>
         </ul>
       </nav>
-
+      <!-- modal download -->
       <div id="modal" class="modal">
+        <div class="modal-content">
+          <div class="logo"></div>
+          <div class="title">
+            <span>王者荣然</span>
+          </div>
+          <div class="des">好礼天天送，注册送大礼包</div>
+          <div class="action-wrap">
+            <span>立马安装体验</span>
+            <span>先逛逛</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal-delete-content" class="modal-delete-content">
         <div class="modal-title">
           <div class="title">
             <svg t="1700549147781" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7713" width="200" height="200">

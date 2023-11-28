@@ -51,6 +51,7 @@
   width: 100%;
 }
 
+/* 复写layout 布局 */
 .layout_content  {
   background-color: #000;
 }

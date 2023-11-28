@@ -44,7 +44,6 @@
 .component_videoListWrap .component_videoListContent .component_videoItem .component_videoTitle {
   font-size: 0.18rem;
   font-weight: 700;
-  color: #fff;
   margin-top: 0.1rem;
 }
 .component_videoListWrap .component_videoListContent .component_videoItem .component_thumbnailContent {
@@ -264,6 +263,20 @@
   display: flex;
   align-items: center;
 }
+
+/* 已加入我喜欢的 */
+.page_videoInfoContent .page_lineWrap .my-like {
+  background-color: #ff80ab;
+  color: #fff !important;
+  font-size: 0.14rem !important;
+  padding: 0.02rem 0.06rem;
+  border-radius: 0.04rem;
+}
+
+.page_videoInfoContent .page_lineWrap .actor span {
+  color: #EBD0BA ;
+}
+
 .page_videoInfoContent .page_lineWrap .actor .add-like {
   background-color: #ccc;
   width: 0.2rem;
@@ -294,6 +307,7 @@
   font-weight: 700;
   color: #fff;
 }
+
 
 /* video info */
 .page_videoContent {
@@ -358,4 +372,69 @@
 .extend-info-wrap .extend-info svg {
   width: 0.2rem;
   height: 0.2rem;
+}
+.extend-info-wrap .extend-info svg {
+  color: #ffff;
+}
+
+
+
+/* 复写modal 布局 */
+.page_modalContent .page_submit p {
+  width: 100%;
+  text-align: center;
+  padding: 0.1rem 0.15rem;
+}
+
+.page_modalContent .page_submit {
+  margin-top: 0.2rem;
+  padding: unset;
+}
+
+.modal-vip-order-info {
+  width: 90% !important;
+}
+
+/* 通用数据 css */
+.disabled-button-blue p {
+  background-color: #84a9cc !important;
+}
+
+.modal-vip-order-info .modal-title {
+  background-color:#ec567c;
+  color: #fff;
+}
+
+.modal-content.page_modalContent .page_line {
+  width: 100%;
+}
+
+#no-vip {
+  padding: 5px;
+  /* background: #e10803; */
+  /* opacity: 0.8; */
+  background-color: rgba(200, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* video detial */
+#no-vip span {
+  border: 2px solid #fff;
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  font-size: 16px;
+  color: #fff;
+  background-color: rgba(200, 0, 0, 0.5);
+  padding: 20px 25px;
+  /* opacity: 0.8; */
+}
+
+/* 复写xgplay 样式 */
+.xgplayer.not-allow-autoplay .xgplayer-poster, .xgplayer.xgplayer-ended .xgplayer-poster, .xgplayer.xgplayer-is-enter .xgplayer-poster.xg-showplay, .xgplayer.xgplayer-nostart .xgplayer-poster, .xgplayer.xgplayer-playing .xgplayer-poster.xg-showplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

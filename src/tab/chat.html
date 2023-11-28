@@ -7,6 +7,8 @@
     <!-- jq -->
     <script src="/public/js/lib/jquery-3.3.1.min.js"></script>
     <script src="/public/js/lib/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
     <title>TYY-Video</title>
     <meta name="description" content="全网海量资源免费看,就来TYY-Video" />
@@ -36,7 +38,16 @@
       </nav>
       <div class="layout_content">
         <div>
-          <h6>施工中......</h6>
+          <!-- <h6>施工中......</h6> -->
+          <!-- <iframe
+            frameborder="0"
+            id="chatra__iframe"
+            allowtransparency="true"
+            title="Chatra live chat"
+            allow="autoplay"
+            src="https://chat.chatra.io/?isModern=true#hostId=dCREqX7oZBKLWCCK6&mode=frame&clientId=04pvedplsXApkgF4sN_GWX5YU9H5C4c5u62Lt0i8&isMobile=1&lang=en&currentPage=https%3A%2F%2Fa60f-218-201-61-38.ngrok-free.app%2Ftab%2Fvip&currentPageTitle=TYY-Video&prevPage=&referrer=https%3A%2F%2Fa60f-218-201-61-38.ngrok-free.app%2Fhttps://chat.chatra.io/?isModern=true#hostId=dCREqX7oZBKLWCCK6&mode=frame&isMobile=1&lang=en&currentPage=https%3A%2F%2Fa60f-218-201-61-38.ngrok-free.app%2Ftab%2Fvip&currentPageTitle=TYY-Video&prevPage=&referrer=https%3A%2F%2Fa60f-218-201-61-38.ngrok-free.app%2F&isModern=true"
+            style="width: 350px; height: 764px; position: absolute"
+          ></iframe> -->
         </div>
       </div>
       <!-- toTop -->
@@ -62,13 +73,27 @@
             <div><a href="/tab/vip">会员</a></div>
           </li>
           <li class="">
-            <div><a href="/tab/gameDownload">小程序</a></div>
+            <div><a href="#modal" id="downoad_program">小程序</a></div>
           </li>
           <li class="layout_active">
             <div><a href="/tab/chat">客服</a></div>
           </li>
         </ul>
       </nav>
+      <!-- modal download -->
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <div class="logo"></div>
+          <div class="title">
+            <span>王者荣然</span>
+          </div>
+          <div class="des">好礼天天送，注册送大礼包</div>
+          <div class="action-wrap">
+            <span>立马安装体验</span>
+            <span>先逛逛</span>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
   <script src="/public/js/page/common.js"></script>

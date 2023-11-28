@@ -1,6 +1,7 @@
 $(document).ready(function () {
   const collapse = new jQueryCollapse($('#vip-info-collapse-screen'), {
     query: 'div .vip-header-screen',
+    accordion: true, // 单选模式
     open: function () {
       this.slideDown(150)
     },

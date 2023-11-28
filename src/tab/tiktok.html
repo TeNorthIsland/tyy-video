@@ -9,6 +9,8 @@
     <!-- jq -->
     <script src="/public/js/lib/jquery-3.3.1.min.js"></script>
     <script src="/public/js/lib/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
     <title>TYY-Video</title>
     <meta name="description" content="全网海量资源免费看,就来TYY-Video" />
@@ -131,10 +133,12 @@
               <div class="swiper-button-next"></div>
               <div class="swiper-pagination"></div>
             </div>
+            <div class="ad-link color-yellow">
+              <a href="/">获取更多数据 请点击查看</a>
+            </div>
             <div class="component_videoListWrap">
               <div class="component_videoListContent">
                 <a class="component_videoItem" href="/screen/videoDetails?pageName=%E8%AF%A6%E6%83%85">
-                  <div class="component_videoTitle"><span>蛋仔派对：蛋仔岛大更新？我变成了椅子</span></div>
                   <div class="component_thumbnailContent">
                     <div class="thumbnial-tag1-wrap">
                       <span>高清</span>
@@ -165,9 +169,12 @@
                       "
                       src="/public/imgs/thumbnail/thumbnail1.png?w=3840&amp;q=75"
                     />
-                  </div> </a
+                    <div class="time-total">
+                      <span>04:12</span>
+                    </div>
+                  </div>
+                  <div class="component_videoTitle"><span>蛋仔派对：蛋仔岛大更新？我变成了椅子</span></div> </a
                 ><a class="component_videoItem" href="/screen/videoDetails?pageName=%E8%AF%A6%E6%83%85">
-                  <div class="component_videoTitle"><span>拆除43：卧龙附近，必有凤雏</span></div>
                   <div class="component_thumbnailContent">
                     <div class="thumbnial-tag1-wrap">
                       <span>高清</span>
@@ -198,11 +205,15 @@
                       "
                       src="/public/imgs/thumbnail/thumbnail2.png?w=3840&amp;q=75"
                     />
+                    <div class="time-total">
+                      <span>04:12</span>
+                    </div>
                   </div>
+                  <div class="component_videoTitle"><span>拆除43：卧龙附近，必有凤雏</span></div>
                 </a>
               </div>
               <!-- 格式1 -->
-              <div class="paginationContent">
+              <!-- <div class="paginationContent">
                 <ul class="rc-pagination pagination">
                   <li title="上一页" tabindex="0" class="rc-pagination-prev" aria-disabled="false">
                     <span class="nextIncon">上一页</span>
@@ -224,7 +235,7 @@
                   </li>
                   <li class="rc-pagination-options"></li>
                 </ul>
-              </div>
+              </div> -->
               <!-- 格式2 -->
               <div class="paginationContent">
                 <ul class="rc-pagination pagination">
@@ -245,6 +256,10 @@
                   </li>
                   <li class="rc-pagination-options"></li>
                 </ul>
+                <!-- total count info -->
+                <div class="total-info">
+                  <span>全站收藏超过101391部电影</span>
+                </div>
               </div>
             </div>
           </div>
@@ -281,13 +296,27 @@
             <div><a href="/tab/vip">会员</a></div>
           </li>
           <li class="">
-            <div><a href="/tab/gameDownload">小程序</a></div>
+            <div><a href="#modal" id="downoad_program">小程序</a></div>
           </li>
           <li class="">
             <div><a href="/tab/chat">客服</a></div>
           </li>
         </ul>
       </nav>
+      <!-- modal download -->
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <div class="logo"></div>
+          <div class="title">
+            <span>王者荣然</span>
+          </div>
+          <div class="des">好礼天天送，注册送大礼包</div>
+          <div class="action-wrap">
+            <span>立马安装体验</span>
+            <span>先逛逛</span>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
   <script src="/public/js/page/common.js"></script>

@@ -5,13 +5,20 @@
     <link rel="stylesheet" href="/public/css/screen.css" crossorigin="" data-precedence="next" />
     <link rel="stylesheet" href="/public/css/layoutSearch.css" crossorigin="" data-precedence="next" />
     <link rel="stylesheet" href="/public/css/xgplayer.css" crossorigin="" data-precedence="next" />
+    <link rel="stylesheet" href="/public/css/vipInfoContainer.css" crossorigin="" data-precedence="next" />
     <link rel="stylesheet" href="/public/css/videoDetail.css" crossorigin="" data-precedence="next" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <!-- jq -->
     <script src="/public/js/lib/jquery-3.3.1.min.js"></script>
     <script src="/public/js/lib/jquery.collapse.js"></script>
     <script src="/public/js/lib/swiper-bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/xgplayer@3.0.10/dist/index.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/xgplayer@3.0.10/dist/index.min.css" rel="stylesheet" /> -->
 
     <title>TYY-Video</title>
     <meta name="description" content="全网海量资源免费看,就来TYY-Video" />
@@ -158,6 +165,9 @@
                 <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span>
               </div>
             </div>
+            <div class="ad-link color-yellow">
+              <a href="/">获取更多数据 请点击查看</a>
+            </div>
             <div class="page_videoContent">
               <div
                 id="mse"
@@ -227,19 +237,25 @@
                     <div class="xgplayer-enter-bar12"></div>
                   </div> </xg-enter
                 ><xg-loading class="xgplayer-loading" data-index="0">
-                  <xg-loading-inner
-                    ><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="-5 -5 110 110">
-                      <path d="M100,50A50,50,0,1,1,50,0" stroke-width="5" stroke="#ddd" stroke-dasharray="236" fill="none"></path></svg
-                  ></xg-loading-inner> </xg-loading
+                  <xg-loading-inner>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="-5 -5 110 110">
+                      <path d="M100,50A50,50,0,1,1,50,0" stroke-width="5" stroke="#ddd" stroke-dasharray="236" fill="none"></path>
+                    </svg>
+                  </xg-loading-inner> </xg-loading
                 ><xg-start class="xgplayer-start" data-index="0">
-                  <xg-start-inner
-                    ><svg xmlns="http://www.w3.org/2000/svg" class="play xg-icon-play" width="28" height="40" viewBox="3 -4 28 40">
+                  <xg-start-inner>
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" class="play xg-icon-play" width="28" height="40" viewBox="3 -4 28 40">
                       <path fill="#fff" transform="scale(0.0320625 0.0320625)" d="M576,363L810,512L576,661zM342,214L576,363L576,661L342,810z"></path></svg
                     ><svg xmlns="http://www.w3.org/2000/svg" class="pause xg-icon-pause" width="28" height="40" viewBox="3 -4 28 40">
                       <path fill="#fff" transform="scale(0.0320625 0.0320625)" d="M598,214h170v596h-170v-596zM256 810v-596h170v596h-170z"></path></svg
-                  ></xg-start-inner> </xg-start
-                ><xg-poster class="xgplayer-poster" style="background-image: url(/video/fm.png)" data-index="0"> </xg-poster
-                ><xg-replay class="xgplayer-replay" data-index="0">
+                    > -->
+                  </xg-start-inner> </xg-start
+                ><xg-poster class="xgplayer-poster" style="background-image: url(/public/imgs/videoPlay/fm.png)" data-index="0">
+                  <div id="no-vip">
+                    <span>今日免费观看次数0次</span>
+                  </div>
+                </xg-poster>
+                <xg-replay class="xgplayer-replay" data-index="0">
                   <svg xmlns="http://www.w3.org/2000/svg" class="xgplayer-replay-svg" viewBox="0 0 78 78" width="78" height="78">
                     <path
                       fill="#fff"
@@ -252,11 +268,11 @@
                     <xg-left-grid class="xg-left-grid">
                       <xg-icon class="xgplayer-play" data-index="0" data-state="pause">
                         <div class="xgplayer-icon">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="play xg-icon-play" width="28" height="40" viewBox="3 -4 28 40">
+                          <!-- <svg xmlns="http://www.w3.org/2000/svg" class="play xg-icon-play" width="28" height="40" viewBox="3 -4 28 40">
                             <path fill="#fff" transform="scale(0.0320625 0.0320625)" d="M576,363L810,512L576,661zM342,214L576,363L576,661L342,810z"></path></svg
                           ><svg xmlns="http://www.w3.org/2000/svg" class="pause xg-icon-pause" width="28" height="40" viewBox="3 -4 28 40">
                             <path fill="#fff" transform="scale(0.0320625 0.0320625)" d="M598,214h170v596h-170v-596zM256 810v-596h170v596h-170z"></path>
-                          </svg>
+                          </svg> -->
                         </div>
                         <div class="xg-tips" lang-key="PLAY_TIPS">Play</div> </xg-icon
                       ><xg-icon class="xgplayer-time" data-index="2" style="display: none">
@@ -457,6 +473,21 @@
                         </div>
                       </span>
                     </div>
+                    <div class="rc-collapse-content rc-collapse-content-active">
+                      <div class="rc-collapse-content-box">
+                        <div class="page_pannerContent">
+                          <a>
+                            <span>支付宝(通道1)</span>
+                          </a>
+                          <a>
+                            <span>支付宝(通道2)</span>
+                          </a>
+                          <a>
+                            <span>微信支付(通道2)</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="rc-collapse-item">
                     <div class="vip-header rc-collapse-header" aria-expanded="false" aria-disabled="false" role="button" tabindex="0">
@@ -476,6 +507,21 @@
                         </div>
                       </span>
                     </div>
+                    <div class="rc-collapse-content rc-collapse-content-active">
+                      <div class="rc-collapse-content-box">
+                        <div class="page_pannerContent">
+                          <a>
+                            <span>支付宝(通道1)</span>
+                          </a>
+                          <a>
+                            <span>支付宝(通道2)</span>
+                          </a>
+                          <a>
+                            <span>微信支付(通道2)</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="rc-collapse-item">
                     <div class="vip-header rc-collapse-header" aria-expanded="false" aria-disabled="false" role="button" tabindex="0">
@@ -494,6 +540,21 @@
                           </div>
                         </div>
                       </span>
+                    </div>
+                    <div class="rc-collapse-content rc-collapse-content-active">
+                      <div class="rc-collapse-content-box">
+                        <div class="page_pannerContent">
+                          <a>
+                            <span>支付宝(通道1)</span>
+                          </a>
+                          <a>
+                            <span>支付宝(通道2)</span>
+                          </a>
+                          <a>
+                            <span>微信支付(通道2)</span>
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -538,10 +599,10 @@
                 </div>
 
                 <div class="extend-info">
-                  <svg t="1700631071072" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1735" width="200" height="200">
+                  <svg id="like-icon" t="1700631071072" class="like-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1735" width="200" height="200">
                     <path
                       d="M739.584 70.592c-92.224 0-177.792 63.04-228.224 109.568C460.864 133.632 375.36 70.592 283.008 70.592 108.48 70.592 0 176.96 0 348.16 0 492.8 130.688 608.256 131.2 608.64l340.544 328.512c10.432 10.432 24.448 16.256 39.552 16.256s29.056-5.824 39.296-16l341.248-328.64c30.656-29.376 130.752-134.848 130.752-260.544C1022.656 176.96 914.176 70.592 739.584 70.592z"
-                      fill="#ef8a86"
+                      fill="#b9b9b9"
                       p-id="1736"
                     ></path>
                   </svg>
@@ -551,14 +612,15 @@
 
               <div class="page_lineWrap">
                 <div class="page_videoTitleLable">片名</div>
-                <div class="page_videoTitle">蛋仔派对：蛋仔岛大更新？我变成了椅子</div>
+                <div class="page_videoTitle color-yellow">蛋仔派对：蛋仔岛大更新？我变成了椅子</div>
               </div>
 
               <div class="page_lineWrap">
                 <div class="page_lable">演员</div>
-                <div class="actor">
+                <div class="actor color-yellow">
                   <span>王力宏</span>
-                  <span class="add-like">
+                  <span id="my-like" data-in="0" class="my-like">已加入我的收藏</span>
+                  <span id="add-like" class="add-like">
                     <svg t="1700632848191" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3595" width="16" height="16">
                       <path
                         d="M548.571429 170.666667v304.761904H853.333333v73.142858H548.547048L548.571429 853.333333h-73.142858l-0.024381-304.761904H170.666667v-73.142858h304.761904V170.666667h73.142858z"
@@ -571,12 +633,12 @@
 
               <div class="page_lineWrap">
                 <div class="page_lable">关键字</div>
-                <div><span>广场舞</span><span>AI</span><span>美食</span></div>
+                <div class="color-yellow"><span>广场舞</span><span>AI</span><span>美食</span></div>
               </div>
 
               <div class="page_lineWrap">
                 <div class="page_lable">片号</div>
-                <div><span>GVH_333</span></div>
+                <div class="color-yellow"><span>GVH_333</span></div>
               </div>
 
               <div class="page_lineWrap">
@@ -619,6 +681,9 @@
                         src="/public/imgs/thumbnail/thumbnail1.png?w=3840&amp;q=75"
                         style="color: transparent; width: 100%; height: auto"
                       />
+                      <div class="time-total">
+                        <span>04:12</span>
+                      </div>
                     </div>
                     <div class="component_videoTitle"><span>蛋仔派对：蛋仔岛大更新？我变成了椅子</span></div> </a
                   ><a class="component_videoItem" href="/screen/videoDetails?pageName=%E8%AF%A6%E6%83%85">
@@ -652,6 +717,9 @@
                         src="/public/imgs/thumbnail/thumbnail2.png?w=3840&amp;q=75"
                         style="color: transparent; width: 100%; height: auto"
                       />
+                      <div class="time-total">
+                        <span>04:12</span>
+                      </div>
                     </div>
                     <div class="component_videoTitle"><span>拆除43：卧龙附近，必有凤雏</span></div>
                   </a>
@@ -688,6 +756,48 @@
           </li>
         </ul>
       </nav>
+      <!-- modal -->
+      <div id="modal-vip-order-info" class="modal">
+        <div class="modal-title">
+          <div class="title">
+            <svg t="1700549147781" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7713" width="200" height="200">
+              <path
+                d="M977.6 824 553.6 168c-19.2-28.8-49.6-28.8-68.8 0l-443.2 656c-19.2 28.8-6.4 52.8 27.2 52.8l880 0C984 876.8 996.8 852.8 977.6 824zM558.4 364.8 544 646.4l-70.4 0-14.4-281.6L558.4 364.8zM508.8 790.4 508.8 790.4c-33.6 0-56-24-56-56 0-33.6 22.4-56 56-56 33.6 0 54.4 24 56 56C564.8 766.4 542.4 790.4 508.8 790.4z"
+                p-id="7714"
+                fill="#ffffff"
+              ></path>
+            </svg>
+            <span>订单确认</span>
+          </div>
+          <a href="#" class="delete-cancel" rel="modal:close">
+            <svg t="1700547760194" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6306" width="200" height="200">
+              <path
+                d="M720.298667 768c-12.714667 0-23.850667-4.778667-33.408-14.293333L270.293333 337.066667c-19.072-19.114667-19.072-49.322667 0-66.816 19.114667-19.072 49.322667-19.072 66.816 0l416.597334 415.018666c19.072 19.072 19.072 49.28 0 66.773334-9.557333 11.136-22.272 15.914667-33.408 15.914666z"
+                fill="#00000"
+                p-id="6307"
+              ></path>
+              <path
+                d="M303.701333 768c-12.714667 0-23.850667-4.778667-33.408-14.293333-19.072-19.114667-19.072-49.322667 0-66.816l415.018667-416.597334c19.072-19.072 49.28-19.072 66.773333 0 19.114667 19.114667 19.114667 49.322667 0 66.816l-414.976 416.597334a45.781333 45.781333 0 0 1-33.408 14.293333z"
+                fill="#00000"
+                p-id="6308"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <div class="modal-content page_modalContent">
+          <div class="page_line"><span>会员类型</span><span>30天-全站资源</span></div>
+          <div class="page_line"><span>付款方式</span><span>支付宝</span></div>
+          <div class="page_line"><span>RMB</span><span>30元</span></div>
+          <div class="page_line"><span>通道手续费</span><span>0元</span></div>
+          <div class="page_line"><span>合计费用</span><span>30元</span></div>
+          <a href="/screen/paySuccess.html" class="page_submit disabled-button-blue">
+            <p>确定</p>
+          </a>
+          <a href="#" rel="modal:close" class="page_submit">
+            <p>取消</p>
+          </a>
+        </div>
+      </div>
       <!-- toTop -->
       <a href="javascript:;" id="toTop" title="回到顶部" class="to-top">
         <svg t="1700530051638" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4017" width="200" height="200">
@@ -699,6 +809,21 @@
           ></path>
         </svg>
       </a>
+
+      <!-- modal download -->
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <div class="logo"></div>
+          <div class="title">
+            <span>王者荣然</span>
+          </div>
+          <div class="des">好礼天天送，注册送大礼包</div>
+          <div class="action-wrap">
+            <span>立马安装体验</span>
+            <span>先逛逛</span>
+          </div>
+        </div>
+      </div>
     </div>
     <next-route-announcer style="position: absolute"></next-route-announcer>
   </body>
